@@ -1,0 +1,321 @@
+@require 'vendorprefix.styl'
+
+$font = 'Hind', 'Helvetica Neue', 'Arial', sans-serif
+$border-radius = 8px
+$text-dark = #001030
+$accent-color = #00CEFC
+
+card()
+  -webkit-transform: rotate(0.000001deg);
+  display block
+  position relative
+  box-shadow 0 1px 3px rgba(0,0,0,0.1)
+  background #FFFFFF
+  border-radius $border-radius
+  padding 60px 10px
+  overflow hidden
+  
+card-contrast()
+  box-shadow 0 1px 3px rgba(0,0,0,0.1)
+  background url(../images/hero1.png) no-repeat
+  background-size cover
+  border-radius $border-radius + 4px
+  overflow hidden
+
+body
+  font 400 10px $font
+  background #F5F7FA
+//  -webkit-font-smoothing: antialiased;
+//  -moz-osx-font-smoothing: grayscale;
+//  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  
+a
+  text-decoration none
+  color $text-dark
+  font-weight 400
+  &:hover
+  &.active
+    color $accent-color
+    
+button
+  display block
+  background none
+  border none
+  outline none
+  width 100%
+  text-align left
+  font-size 13px
+  padding 8px 15px
+  color $text-dark
+  border-radius $border-radius - 2px
+  cursor pointer
+  
+.card
+  card()
+  > img
+    width 100%
+  
+.hero
+  card-contrast()
+  margin 30px 10px 70px 10px
+  height 240px
+  padding 20px
+  @media (min-width 600px)
+    height 300px
+  > *
+    text-align center
+    > h3
+      text-align center
+      color #FFFFFF
+      font-weight 300
+      margin 10px 0
+    > a 
+      width 22px
+      margin auto
+      display block
+      > i 
+        font-size 22px
+        color #FFFFFF
+  
+.logo
+  background url(../images/logo.png) no-repeat
+  background-size contain
+  height 16px
+  width 118px
+  margin 0 auto 20px auto
+  @media (min-width 600px)
+    margin 0 0 6px 0
+  > a 
+    display block
+    width 100%
+    height 100%
+  
+nav
+  margin 30px 0 0 0
+  padding 15px
+  ul
+    text-align center
+    list-style none
+    margin 20px 0
+    @media (min-width 600px)
+      float right
+      text-align right
+    @media (min-width 600px)
+      margin 0
+    > li 
+      display inline-block
+      padding 0 10px
+      font-size 14px
+      &:first-of-type
+        padding-left 0
+      &:last-of-type
+        padding-right 0
+      @media (min-width 900px)
+        padding 0 20px
+        
+.download
+  margin-bottom 20px
+  button
+    width auto
+    
+button.download-collection-button
+  background rgba(55,175,208,0.06)
+  padding 18px 30px
+  margin-bottom 40px
+  &:hover
+    > span.button-label
+      color $accent-color
+  > span.button-label
+    display block
+    color $accent-color
+    float left
+  > .collection-total
+    position relative
+    float right
+    display none
+    > span.collection-total-count
+      display block
+      top 8px
+      right 8px
+      position absolute
+      background #C4C8CB
+      border 1px solid #F5F7FA
+      color #FFFFFF
+      border-radius: 100px
+      width 18px
+      height 18px
+      font-size 10px
+      text-align center
+      font-weight 500
+      line-height 16px
+      transition 300ms
+      -webkit-transition 300ms
+      &.color
+        background #FF4486 !important
+
+.collection-total i 
+  display block
+  font-size 20px
+  color #C4C8CB
+.countAnim 
+  -webkit-animation countAnim 350ms forwards
+  animation countAnim 350ms forwards
+
+@keyframes countAnim 
+  50% 
+    opacity 0
+    -webkit-transform translate3d(0, 35px, 0)
+    transform translate3d(0, 35px, 0)
+
+  51% 
+    opacity 0
+    -webkit-transform translate3d(0, -35px, 0)
+    transform translate3d(0, -35px, 0)
+
+  100% 
+    opacity 1
+    -webkit-transform translate3d(0, 0, 0)
+    transform translate3d(0, 0, 0)
+        
+.sidebar
+  .filter
+    .filter-list
+      span 
+        display block
+        padding 0 0 12px 15px
+        font-size 14px
+        font-weight 500
+        color $text-dark
+      button
+        margin 1px 0
+        &:last-of-type
+          margin-bottom 10px
+        &:hover
+        &.checked
+          color $accent-color
+          background rgba(55,175,208,0.06)
+        
+.grid
+  margin-bottom 40px
+
+.box
+  padding 15px
+  background alpha(#bada55, 0.8)
+  border-radius 8px
+  
+.row
+  > .column.column.item
+    width 100%
+    > .card
+      > .overlay
+        display none
+        position absolute
+        text-align center
+        z-index 15
+        top 0
+        left 0
+        bottom 0
+        right 0
+        height 100%
+        width 100%
+        background alpha(#000F2B, 0.8)
+        > span
+          position absolute
+          left 0
+          right 0
+          bottom 20px
+          color $accent-color
+          font-size 13px
+      > input
+        z-index 50
+        position absolute
+        top 20px
+        right 20px
+        cursor pointer
+        width 36px
+        height 36px
+        opacity 0
+        &:checked
+          ~ span
+            border 1px solid $accent-color
+            > i.icon-plus
+              display none
+            > i.icon-check
+              display block !important
+          ~ .overlay
+            display block !important
+        &:hover
+          ~ span
+            background rgba(55,175,208,0.1)
+            > i 
+              color $accent-color
+      > span
+        z-index 40
+        position absolute
+        top 20px
+        right 20px
+        border-radius $border-radius
+        display block
+        background rgba(55,175,208,0.06)
+        border 1px solid rgba(0,0,0,0)
+        width 36px
+        height 36px
+        > i
+          position absolute
+          font-size 15px
+          left 9px
+          top 9px
+          color $accent-color
+          &.icon-plus
+            display block
+          &.icon-check
+            display none
+      > a 
+        position absolute
+        color $accent-color
+        padding 25px 0
+        bottom 0
+        left 0
+        right 0
+        text-align center
+        font-size 13px
+        font-weight 500
+        &:hover
+          color #0AAECF
+        > span
+          display inline-block
+          margin auto
+          
+.zipit
+  display none
+  
+.row
+  > section.column.column.aside-right
+    margin-top 30px
+    
+@media (min-width 400px)
+  // css
+        
+@media (min-width 600px)
+  .row
+    > aside.column.column.aside-left
+      width 220px
+      margin-right 65px
+    > section.column.column.aside-right
+      width calc(100% - 300px)
+      margin-right 15px
+      margin-top 0
+        
+@media (min-width 900px)
+  section
+    .row
+      > .column.column.item
+        width 50%
+        
+@media (min-width 1200px)
+  section
+    .row
+      > .column.column.item
+        width (100/3) + '%'
+  
+@import 'moon.styl'

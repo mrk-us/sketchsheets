@@ -1,0 +1,210 @@
+//- index.jade
+include ../includes/zip.php
+doctype html
+html
+  include ../includes/head.jade
+  title Printable sketch sheets for UX & UI designers
+  meta(name='title' ,content='Printable sketch sheets for UX & UI designers')
+  meta(property='og:title', content='Printable sketch sheets for UX & UI designers')
+  meta(name='twitter:title', content='Printable sketch sheets for UX & UI designers')
+  meta(name='description', content='Printable wireframe templates for designers')
+  meta(property='og:description', content='Printable wireframe templates for designers')
+  meta(name='twitter:description', content='Printable wireframe templates for designers')
+  link(rel='stylesheet', href='../css/grub.min.css')
+  link(rel='stylesheet', href='../css/style.css')
+  body        
+    .wrap
+      nav
+        .row
+          .column.column-4
+            .logo
+              a(href='/')
+          .column.column-8
+            ul
+              li
+                a.active(href='/devicetemplates') Device Templates
+              li
+                a(href='/devicetemplates') Icon Templates
+              li
+                a(href='/devicetemplates') UX Templates
+      section
+        .row.hero
+          .column
+            h3 Free Printable Device Templates for Designers
+            a(href='')
+              i.icon-twitter
+        
+      .row
+        aside.column.aside-left.top.nest
+          .row.sidebar
+            .column.column-12
+              .download-collection
+                button.disabled.download-collection-button
+                  span.button-label.disabled
+                    | Download Collection
+                  .collection-total
+                    span.collection-total-count
+                      | 0
+            .column.column-12
+              .filter
+                .filter-list(data-filter-group='device')
+                  span Device
+                  button.button.checked(data-filter='.iphone5') iPhone 5
+                  button.button(data-filter='.iphone6') iPhone 6
+                  button.button(data-filter='.iphone6plus') iPhone 6 Plus
+                  button.button(data-filter='.ipad') iPad
+                  button.button(data-filter='.ipadpro') iPad Pro
+                  button.button(data-filter='.web') Web / Desktop
+            .column.column-12
+              .filter
+                .filter-list(data-filter-group='orientation')
+                  span Orientation
+                  button.button.checked(data-filter='') All
+                  button.button(data-filter='.portrait') Portrait
+                  button.button(data-filter='.landscape') Landscape
+                  button.button(data-filter='.portrait-landscape') Both
+            .column.column-12
+              .filter
+                .filter-list(data-filter-group='screen')
+                  span Screen
+                  button.button.checked(data-filter='') All
+                  button.button(data-filter='.standard') Standard
+                  button.button(data-filter='.scrolled') Scrolled
+                  button.button(data-filter='.standard-scrolled') Both
+        section.column.aside-right.top.nest
+          form(name='zip' method='post')
+            .row.justify.grid
+              .column.item.iphone5.portrait.standard
+                .card
+                  input(type='checkbox' name='collection' value='1')
+                  .overlay
+                    span Added to collection
+                  span
+                    i.icon-plus
+                    i.icon-check
+                  img(src='../sketchsheets/iphone5/Portrait_x2_Normal.png')
+                  a(href='') 
+                    span Download                  
+              .column.item.iphone5.portrait.standard-scrolled
+                .card
+                  input(type='checkbox' name='collection' value='1')
+                  .overlay
+                    span Added to collection
+                  span
+                    i.icon-plus
+                    i.icon-check
+                  img(src='../sketchsheets/iphone5/Portrait_x2_Normal_Scrolled.png')
+                  a(href='') 
+                    span Download                  
+              .column.item.iphone5.portrait.scrolled
+                .card
+                  input(type='checkbox' name='collection' value='1')
+                  .overlay
+                    span Added to collection
+                  span
+                    i.icon-plus
+                    i.icon-check
+                  img(src='../sketchsheets/iphone5/Portrait_x2_Scrolled.png')
+                  a(href='') 
+                    span Download                  
+              .column.item.iphone5.portrait-landscape.standard
+                .card
+                  input(type='checkbox' name='collection' value='1')
+                  .overlay
+                    span Added to collection
+                  span
+                    i.icon-plus
+                    i.icon-check
+                  img(src='../sketchsheets/iphone5/Portrait_Landscape_x2_Normal.png')
+                  a(href='') 
+                    span Download                  
+              .column.item.iphone5.portrait-landscape.standard-scrolled
+                .card
+                  input(type='checkbox' name='collection' value='1')
+                  .overlay
+                    span Added to collection
+                  span
+                    i.icon-plus
+                    i.icon-check
+                  img(src='../sketchsheets/iphone5/Portrait_Landscape_x2_Normal_Scrolled.png')
+                  a(href='') 
+                    span Download                  
+              .column.item.iphone5.portrait-landscape.scrolled
+                .card
+                  input(type='checkbox' name='collection' value='1')
+                  .overlay
+                    span Added to collection
+                  span
+                    i.icon-plus
+                    i.icon-check
+                  img(src='../sketchsheets/iphone5/Portrait_Landscape_x2_Scrolled.png')
+                  a(href='') 
+                    span Download                  
+              .column.item.iphone5.landscape.standard
+                .card
+                  input(type='checkbox' name='collection' value='1')
+                  .overlay
+                    span Added to collection
+                  span
+                    i.icon-plus
+                    i.icon-check
+                  img(src='../sketchsheets/iphone5/Landscape_x2_Normal.png')
+                  a(href='') 
+                    span Download                  
+              .column.item.iphone5.landscape.standard-scrolled
+                .card
+                  input(type='checkbox' name='collection' value='1')
+                  .overlay
+                    span Added to collection
+                  span
+                    i.icon-plus
+                    i.icon-check
+                  img(src='../sketchsheets/iphone5/Landscape_x2_Normal_Scrolled.png')
+                  a(href='') 
+                    span Download                  
+              .column.item.iphone5.landscape.scrolled
+                .card
+                  input(type='checkbox' name='collection' value='1')
+                  .overlay
+                    span Added to collection
+                  span
+                    i.icon-plus
+                    i.icon-check
+                  img(src='../sketchsheets/iphone5/Landscape_x2_Scrolled.png')
+                  a(href='') 
+                    span Download                  
+              .column.item.iphone5.portrait.standard
+                .card
+                  input(type='checkbox' name='collection' value='1')
+                  .overlay
+                    span Added to collection
+                  span
+                    i.icon-plus
+                    i.icon-check
+                  img(src='../sketchsheets/iphone5/Portrait_x4_Normal.png')
+                  a(href='') 
+                    span Download                  
+              .column.item.iphone5.portrait.standard-scrolled
+                .card
+                  input(type='checkbox' name='collection' value='1')
+                  .overlay
+                    span Added to collection
+                  span
+                    i.icon-plus
+                    i.icon-check
+                  img(src='../sketchsheets/iphone5/Portrait_x4_Normal_Scrolled.png')
+                  a(href='') 
+                    span Download                  
+              .column.item.iphone5.portrait.scrolled
+                .card
+                  input(type='checkbox' name='collection' value='1')
+                  .overlay
+                    span Added to collection
+                  span
+                    i.icon-plus
+                    i.icon-check
+                  img(src='../sketchsheets/iphone5/Portrait_x4_Scrolled.png')
+                  a(href='') 
+                    span Download                  
+  
+  include ../includes/scripts.jade
