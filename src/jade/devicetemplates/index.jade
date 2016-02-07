@@ -72,11 +72,11 @@ html
                   button.button(data-filter='.scrolled') Scrolled
                   button.button(data-filter='.standard-scrolled') Both
         section.column.aside-right.top.nest
-          form(name='zip' method='post')
+          form(name='zips' method='post')
             .row.justify.grid
               .column.item.iphone5.portrait.standard
                 .card
-                  input(type='checkbox' name='collection' value='1')
+                  input(type='checkbox' name='files[]' value='iPhone5/')
                   .overlay
                     span Added to collection
                   span
@@ -87,7 +87,7 @@ html
                     span Download                  
               .column.item.iphone5.portrait.standard-scrolled
                 .card
-                  input(type='checkbox' name='collection' value='1')
+                  input(type='checkbox' name='files[]' value='iPhone5/')
                   .overlay
                     span Added to collection
                   span
@@ -98,7 +98,7 @@ html
                     span Download                  
               .column.item.iphone5.portrait.scrolled
                 .card
-                  input(type='checkbox' name='collection' value='1')
+                  input(type='checkbox' name='files[]' value='iPhone5/')
                   .overlay
                     span Added to collection
                   span
@@ -109,7 +109,7 @@ html
                     span Download                  
               .column.item.iphone5.portrait-landscape.standard
                 .card
-                  input(type='checkbox' name='collection' value='1')
+                  input(type='checkbox' name='files[]' value='iPhone5/')
                   .overlay
                     span Added to collection
                   span
@@ -120,7 +120,7 @@ html
                     span Download                  
               .column.item.iphone5.portrait-landscape.standard-scrolled
                 .card
-                  input(type='checkbox' name='collection' value='1')
+                  input(type='checkbox' name='files[]' value='iPhone5/')
                   .overlay
                     span Added to collection
                   span
@@ -131,7 +131,7 @@ html
                     span Download                  
               .column.item.iphone5.portrait-landscape.scrolled
                 .card
-                  input(type='checkbox' name='collection' value='1')
+                  input(type='checkbox' name='files[]' value='iPhone5/')
                   .overlay
                     span Added to collection
                   span
@@ -142,7 +142,7 @@ html
                     span Download                  
               .column.item.iphone5.landscape.standard
                 .card
-                  input(type='checkbox' name='collection' value='1')
+                  input(type='checkbox' name='files[]' value='iPhone5/')
                   .overlay
                     span Added to collection
                   span
@@ -153,7 +153,7 @@ html
                     span Download                  
               .column.item.iphone5.landscape.standard-scrolled
                 .card
-                  input(type='checkbox' name='collection' value='1')
+                  input(type='checkbox' name='files[]' value='iPhone5/')
                   .overlay
                     span Added to collection
                   span
@@ -164,7 +164,7 @@ html
                     span Download                  
               .column.item.iphone5.landscape.scrolled
                 .card
-                  input(type='checkbox' name='collection' value='1')
+                  input(type='checkbox' name='files[]' value='iPhone5/')
                   .overlay
                     span Added to collection
                   span
@@ -175,7 +175,7 @@ html
                     span Download                  
               .column.item.iphone5.portrait.standard
                 .card
-                  input(type='checkbox' name='collection' value='1')
+                  input(type='checkbox' name='files[]' value='iPhone5/')
                   .overlay
                     span Added to collection
                   span
@@ -186,7 +186,7 @@ html
                     span Download                  
               .column.item.iphone5.portrait.standard-scrolled
                 .card
-                  input(type='checkbox' name='collection' value='1')
+                  input(type='checkbox' name='files[]' value='iPhone5/')
                   .overlay
                     span Added to collection
                   span
@@ -197,7 +197,7 @@ html
                     span Download                  
               .column.item.iphone5.portrait.scrolled
                 .card
-                  input(type='checkbox' name='collection' value='1')
+                  input(type='checkbox' name='files[]' value='iPhone5/')
                   .overlay
                     span Added to collection
                   span
@@ -205,6 +205,7 @@ html
                     i.icon-check
                   img(src='../sketchsheets/iphone5/Portrait_x4_Scrolled.png')
                   a(href='') 
-                    span Download                  
+                    span Download 
+            input(type='submit' name='zipit' class='zipit')
   
   include ../includes/scripts.jade
