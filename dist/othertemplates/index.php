@@ -73,6 +73,7 @@ unset($_POST);
     <meta property="og:description" content="Printable wireframe templates for designers">
     <meta name="twitter:description" content="Printable wireframe templates for designers">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fluidbox.css">
   </head>
   <body>       
     <div class="wrap">
