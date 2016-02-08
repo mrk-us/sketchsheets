@@ -65,28 +65,27 @@ unset($_POST);
     <link rel="shortcut icon" href="">
     <link rel="image_src" href="">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind:400,300,500">
+    <title>Printable device sketch sheet templates for UX & UI designers</title>
+    <meta name="title" content="Printable sketch sheets for UX &amp; UI designers">
+    <meta property="og:title" content="Printable sketch sheets for UX &amp; UI designers">
+    <meta name="twitter:title" content="Printable sketch sheets for UX &amp; UI designers">
+    <meta name="description" content="Printable wireframe templates for designers">
+    <meta property="og:description" content="Printable wireframe templates for designers">
+    <meta name="twitter:description" content="Printable wireframe templates for designers">
+    <link rel="stylesheet" href="../css/style.css">
   </head>
-  <title>Printable sketch sheets for UX & UI designers</title>
-  <meta name="title" content="Printable sketch sheets for UX &amp; UI designers">
-  <meta property="og:title" content="Printable sketch sheets for UX &amp; UI designers">
-  <meta name="twitter:title" content="Printable sketch sheets for UX &amp; UI designers">
-  <meta name="description" content="Printable wireframe templates for designers">
-  <meta property="og:description" content="Printable wireframe templates for designers">
-  <meta name="twitter:description" content="Printable wireframe templates for designers">
-  <link rel="stylesheet" href="../css/grub.min.css">
-  <link rel="stylesheet" href="../css/style.css">
   <body>       
     <div class="wrap">
       <nav>
         <div class="row">
-          <div class="column column-4">
+          <div class="column four">
             <div class="logo"><a href="/"></a></div>
           </div>
-          <div class="column column-8">
+          <div class="column eight">
             <ul>
               <li><a href="/devicetemplates" class="active">Device Templates</a></li>
-              <li><a href="/devicetemplates">Icon Templates</a></li>
-              <li><a href="/devicetemplates">UX Templates</a></li>
+              <li><a href="../icontemplates">Icon Templates</a></li>
+              <li><a href="../othertemplates">Other Templates</a></li>
             </ul>
           </div>
         </div>
@@ -101,14 +100,14 @@ unset($_POST);
       <div class="row">
         <aside class="column aside-left top nest">
           <div class="row sidebar">
-            <div class="column column-12">
+            <div class="column twelve">
               <div class="download-collection">
                 <button class="disabled download-collection-button"><span class="button-label disabled">Download Collection</span>
                   <div class="collection-total"><span class="collection-total-count">0</span></div>
                 </button>
               </div>
             </div>
-            <div class="column column-12">
+            <div class="column twelve">
               <div class="filter">
                 <div data-filter-group="device" class="filter-list"><span>Device</span>
                   <button data-filter=".iphone5" class="button checked">iPhone 5</button>
@@ -120,7 +119,7 @@ unset($_POST);
                 </div>
               </div>
             </div>
-            <div class="column column-12">
+            <div class="column twelve">
               <div class="filter">
                 <div data-filter-group="orientation" class="filter-list"><span>Orientation</span>
                   <button data-filter="" class="button checked">All</button>
@@ -130,7 +129,7 @@ unset($_POST);
                 </div>
               </div>
             </div>
-            <div class="column column-12">
+            <div class="column twelve">
               <div class="filter">
                 <div data-filter-group="screen" class="filter-list"><span>Screen</span>
                   <button data-filter="" class="button checked">All</button>
@@ -223,11 +222,10 @@ unset($_POST);
         </section>
       </div>
     </div>
+    <script src="../js/jquery-1.12.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.0.0/imagesloaded.pkgd.min.js"></script>
+    <script src="../js/isotope.pkgd.min.js"></script>
+    <script src="../js/classie.js"></script>
+    <script src="../js/scripts.js"></script>
   </body>
-  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.0.0/imagesloaded.pkgd.min.js"></script>
-  <script src="../js/isotope.pkgd.min.js"></script>
-  <script src="../js/classie.min.js"></script>
-  <script src="../js/main.js"></script>
 </html>

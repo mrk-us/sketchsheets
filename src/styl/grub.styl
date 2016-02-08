@@ -1,0 +1,89 @@
+@require 'vendorprefix.styl'
+@require 'config.styl'
+
+*
+*::before
+*::after
+  box-sizing border-box
+  margin 0
+  padding 0
+
+columns = (one 1),
+          (two 2),
+          (three 3),
+          (four 4),
+          (five 5),
+          (six 6),
+          (seven 7),
+          (eight 8),
+          (nine 9),
+          (ten 10),
+          (eleven 11),
+          (twelve 12)
+
+column-widths()
+  for column in columns
+    &.{column[0]}
+      $percent = ((column[1]*100) / 12)
+      width $percent + '%'
+
+column-auto-widths()
+  for n in 1..12
+    > .column:first-child:nth-last-child({n}),
+    > .column:first-child:nth-last-child({n}) ~ *
+      $percent = 100/n
+      width: $percent + '%'
+
+column-offset()
+  for column in columns
+    &.offset-{column[0]}
+      $percent = ((column[1]*100) / 12)
+      margin-left: $percent + "%"
+
+.wrap
+  margin 0 auto
+
+.row
+  font-size 0
+  text-align center
+  &.justify
+    text-align justify
+  &::after
+    content ''
+    display inline-block
+    vertical-align middle
+    height 100%
+  > .column
+    display inline-block
+    width 100%
+    padding $gutter
+    font-size medium
+    font-size $base-size
+    text-align left
+    &.top
+      vertical-align top
+    &,.middle
+      vertical-align middle
+    &.bottom
+      vertical-align bottom
+    &.no-padding
+      padding 0
+
+@media (min-width: $screen-phone)
+  .wrap
+    width $screen-phone
+@media (min-width: $screen-tablet)
+  .wrap
+    width $screen-tablet
+  .row
+    column-auto-widths()
+    > .column
+      &.column
+        column-widths()
+        column-offset()
+@media (min-width: $screen-desktop)
+  .wrap
+    width $screen-desktop
+@media (min-width: $screen-desktop-large)
+  .wrap
+    width $screen-desktop-large

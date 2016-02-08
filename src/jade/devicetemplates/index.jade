@@ -2,31 +2,31 @@
 include ../includes/zip.php
 doctype html
 html
-  include ../includes/head.jade
-  title Printable sketch sheets for UX & UI designers
-  meta(name='title' ,content='Printable sketch sheets for UX & UI designers')
-  meta(property='og:title', content='Printable sketch sheets for UX & UI designers')
-  meta(name='twitter:title', content='Printable sketch sheets for UX & UI designers')
-  meta(name='description', content='Printable wireframe templates for designers')
-  meta(property='og:description', content='Printable wireframe templates for designers')
-  meta(name='twitter:description', content='Printable wireframe templates for designers')
-  link(rel='stylesheet', href='../css/grub.min.css')
-  link(rel='stylesheet', href='../css/style.css')
+  head
+    include ../includes/head.jade
+    title Printable device sketch sheet templates for UX & UI designers
+    meta(name='title' ,content='Printable sketch sheets for UX & UI designers')
+    meta(property='og:title', content='Printable sketch sheets for UX & UI designers')
+    meta(name='twitter:title', content='Printable sketch sheets for UX & UI designers')
+    meta(name='description', content='Printable wireframe templates for designers')
+    meta(property='og:description', content='Printable wireframe templates for designers')
+    meta(name='twitter:description', content='Printable wireframe templates for designers')
+    link(rel='stylesheet', href='../css/style.css')
   body        
     .wrap
       nav
         .row
-          .column.column-4
+          .column.four
             .logo
               a(href='/')
-          .column.column-8
+          .column.eight
             ul
               li
                 a.active(href='/devicetemplates') Device Templates
               li
-                a(href='/devicetemplates') Icon Templates
+                a(href='../icontemplates') Icon Templates
               li
-                a(href='/devicetemplates') UX Templates
+                a(href='../othertemplates') Other Templates
       section
         .row.hero
           .column
@@ -37,7 +37,7 @@ html
       .row
         aside.column.aside-left.top.nest
           .row.sidebar
-            .column.column-12
+            .column.twelve
               .download-collection
                 button.disabled.download-collection-button
                   span.button-label.disabled
@@ -45,7 +45,7 @@ html
                   .collection-total
                     span.collection-total-count
                       | 0
-            .column.column-12
+            .column.twelve
               .filter
                 .filter-list(data-filter-group='device')
                   span Device
@@ -55,7 +55,7 @@ html
                   button.button(data-filter='.ipad') iPad
                   button.button(data-filter='.ipadpro') iPad Pro
                   button.button(data-filter='.web') Web / Desktop
-            .column.column-12
+            .column.twelve
               .filter
                 .filter-list(data-filter-group='orientation')
                   span Orientation
@@ -63,7 +63,7 @@ html
                   button.button(data-filter='.portrait') Portrait
                   button.button(data-filter='.landscape') Landscape
                   button.button(data-filter='.portrait-landscape') Both
-            .column.column-12
+            .column.twelve
               .filter
                 .filter-list(data-filter-group='screen')
                   span Screen
@@ -208,4 +208,8 @@ html
                     span Download 
             input(type='submit' name='zipit' class='zipit')
   
-  include ../includes/scripts.jade
+    script(src='../js/jquery-1.12.0.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.0.0/imagesloaded.pkgd.min.js')
+    script(src='../js/isotope.pkgd.min.js')
+    script(src='../js/classie.js')
+    script(src='../js/scripts.js')
