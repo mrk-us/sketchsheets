@@ -1,3 +1,7 @@
+$(function () {
+  $('a.lightbox').fluidbox({
+  });
+});
 $(document).ready( function() {
   // init Isotope
   var $grid = $('.grid').imagesLoaded( function() {

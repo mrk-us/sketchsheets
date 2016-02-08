@@ -102,7 +102,7 @@ unset($_POST);
           <div class="row sidebar">
             <div class="column twelve">
               <div class="download-collection">
-                <button class="disabled download-collection-button"><span class="button-label disabled">Download Collection</span>
+                <button class="disabled download-collection-button"><span class="button-label disabled">Download</span>
                   <div class="collection-total"><span class="collection-total-count">0</span></div>
                 </button>
               </div>
@@ -148,349 +148,349 @@ unset($_POST);
               <div class="column item iphone5 portrait standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone5/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x2/Blank/iPhone5-Portrait-Standard-x2.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x2/Blank/iPhone5-Portrait-Standard-x2.png" class="lightbox"><img src="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x2/Blank/iPhone5-Portrait-Standard-x2.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone5 portrait standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone5/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x3/Blank/iPhone5-Portrait-Standard-x3.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x3/Blank/iPhone5-Portrait-Standard-x3.png" class="lightbox"><img src="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x3/Blank/iPhone5-Portrait-Standard-x3.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone5 portrait standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone5/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x4/Blank/iPhone5-Portrait-Standard-x4.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x4/Blank/iPhone5-Portrait-Standard-x4.png" class="lightbox"><img src="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x4/Blank/iPhone5-Portrait-Standard-x4.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone5 portrait standard-scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone5/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x1-Scrolled-x1/Blank/iPhone5-Portrait-Standard-x1-Scrolled-x1.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x1-Scrolled-x1/Blank/iPhone5-Portrait-Standard-x1-Scrolled-x1.png" class="lightbox"></a><img src="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x1-Scrolled-x1/Blank/iPhone5-Portrait-Standard-x1-Scrolled-x1.png"><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone5 portrait standard-scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone5/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x2-Scrolled-x1/Blank/iPhone5-Portrait-Standard-x2-Scrolled-x1.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x2-Scrolled-x1/Blank/iPhone5-Portrait-Standard-x2-Scrolled-x1.png" class="lightbox"></a><img src="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x2-Scrolled-x1/Blank/iPhone5-Portrait-Standard-x2-Scrolled-x1.png"><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone5 portrait standard-scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone5/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x2-Scrolled-x2/Blank/iPhone5-Portrait-Standard-x2-Scrolled-x2.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x2-Scrolled-x2/Blank/iPhone5-Portrait-Standard-x2-Scrolled-x2.png" class="lightbox"><img src="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x2-Scrolled-x2/Blank/iPhone5-Portrait-Standard-x2-Scrolled-x2.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone5 portrait scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone5/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Scrolled-x2/Blank/iPhone5-Portrait-Scrolled-x2.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Scrolled-x2/Blank/iPhone5-Portrait-Scrolled-x2.png" class="lightbox"><img src="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Scrolled-x2/Blank/iPhone5-Portrait-Scrolled-x2.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone5 portrait scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone5/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Scrolled-x3/Blank/iPhone5-Portrait-Scrolled-x3.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Scrolled-x3/Blank/iPhone5-Portrait-Scrolled-x3.png" class="lightbox"><img src="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Scrolled-x3/Blank/iPhone5-Portrait-Scrolled-x3.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone5 portrait scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone5/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Scrolled-x4/Blank/iPhone5-Portrait-Scrolled-x4.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Scrolled-x4/Blank/iPhone5-Portrait-Scrolled-x4.png" class="lightbox"><img src="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Scrolled-x4/Blank/iPhone5-Portrait-Scrolled-x4.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone5 portrait-landscape standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone5/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone5/Landscape+Portrait/iPhone5-Portrait-Standard-x1-Landscape-Standard-x1/Blank/iPhone5-Portrait-Standard-x1-Landscape-Standard-x1.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone5/Landscape+Portrait/iPhone5-Portrait-Standard-x1-Landscape-Standard-x1/Blank/iPhone5-Portrait-Standard-x1-Landscape-Standard-x1.png" class="lightbox"><img src="../sketchsheets/iPhone5/Landscape+Portrait/iPhone5-Portrait-Standard-x1-Landscape-Standard-x1/Blank/iPhone5-Portrait-Standard-x1-Landscape-Standard-x1.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone5 portrait-landscape standard-scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone5/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone5/Landscape+Portrait/iPhone5-Portrait-Standard-x1-Landscape-Scrolled-x1/Blank/iPhone5-Portrait-Standard-x1-Landscape-Scrolled-x1.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone5/Landscape+Portrait/iPhone5-Portrait-Standard-x1-Landscape-Scrolled-x1/Blank/iPhone5-Portrait-Standard-x1-Landscape-Scrolled-x1.png" class="lightbox"><img src="../sketchsheets/iPhone5/Landscape+Portrait/iPhone5-Portrait-Standard-x1-Landscape-Scrolled-x1/Blank/iPhone5-Portrait-Standard-x1-Landscape-Scrolled-x1.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone5 portrait-landscape scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone5/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone5/Landscape+Portrait/iPhone5-Portrait-Scrolled-x1-Landscape-Scrolled-x1/Blank/iPhone5-Portrait-Scrolled-x1-Landscape-Scrolled-x1.png"><a href=""> <span>Download</span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone5/Landscape+Portrait/iPhone5-Portrait-Scrolled-x1-Landscape-Scrolled-x1/Blank/iPhone5-Portrait-Scrolled-x1-Landscape-Scrolled-x1.png" class="lightbox"><img src="../sketchsheets/iPhone5/Landscape+Portrait/iPhone5-Portrait-Scrolled-x1-Landscape-Scrolled-x1/Blank/iPhone5-Portrait-Scrolled-x1-Landscape-Scrolled-x1.png"></a><a href="" class="downloadzip"> <span>Download</span></a>
                 </div>
               </div>
               <div class="column item iphone5 landscape standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone5/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone5/Landscape/iPhone5-Landscape-Standard-x2/Blank/iPhone5-Landscape-Standard-x2.png"><a href=""> <span>Download </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone5/Landscape/iPhone5-Landscape-Standard-x2/Blank/iPhone5-Landscape-Standard-x2.png" class="lightbox"><img src="../sketchsheets/iPhone5/Landscape/iPhone5-Landscape-Standard-x2/Blank/iPhone5-Landscape-Standard-x2.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
               <div class="column item iphone5 landscape standard-scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone5/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone5/Landscape/iPhone5-Landscape-Standard-x1-Landscape-Scrolled-x1/Blank/iPhone5-Landscape-Standard-x1-Landscape-Scrolled-x1.png"><a href=""> <span>Download </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone5/Landscape/iPhone5-Landscape-Standard-x1-Landscape-Scrolled-x1/Blank/iPhone5-Landscape-Standard-x1-Landscape-Scrolled-x1.png" class="lightbox"><img src="../sketchsheets/iPhone5/Landscape/iPhone5-Landscape-Standard-x1-Landscape-Scrolled-x1/Blank/iPhone5-Landscape-Standard-x1-Landscape-Scrolled-x1.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
               <div class="column item iphone5 landscape scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone5/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone5/Landscape/iPhone5-Landscape-Scrolled-x2/Blank/iPhone5-Landscape-Scrolled-x2.png"><a href=""> <span>Download</span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone5/Landscape/iPhone5-Landscape-Scrolled-x2/Blank/iPhone5-Landscape-Scrolled-x2.png" class="lightbox"><img src="../sketchsheets/iPhone5/Landscape/iPhone5-Landscape-Scrolled-x2/Blank/iPhone5-Landscape-Scrolled-x2.png"></a><a href="" class="downloadzip"> <span>Download</span></a>
                 </div>
               </div>
               <div class="column item iphone6 portrait standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Standard-x2/Blank/iPhone6-Portrait-Standard-x2.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Standard-x2/Blank/iPhone6-Portrait-Standard-x2.png" class="lightbox"><img src="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Standard-x2/Blank/iPhone6-Portrait-Standard-x2.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone6 portrait standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Standard-x3/Blank/iPhone6-Portrait-Standard-x3.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Standard-x3/Blank/iPhone6-Portrait-Standard-x3.png" class="lightbox"><img src="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Standard-x3/Blank/iPhone6-Portrait-Standard-x3.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone6 portrait standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Standard-x4/Blank/iPhone6-Portrait-Standard-x4.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Standard-x4/Blank/iPhone6-Portrait-Standard-x4.png" class="lightbox"><img src="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Standard-x4/Blank/iPhone6-Portrait-Standard-x4.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone6 portrait standard-scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Standard-x1-Scrolled-x1/Blank/iPhone6-Portrait-Standard-x1-Scrolled-x1.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Standard-x1-Scrolled-x1/Blank/iPhone6-Portrait-Standard-x1-Scrolled-x1.png" class="lightbox"><img src="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Standard-x1-Scrolled-x1/Blank/iPhone6-Portrait-Standard-x1-Scrolled-x1.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone6 portrait standard-scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Standard-x2-Scrolled-x1/Blank/iPhone6-Portrait-Standard-x2-Scrolled-x1.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Standard-x2-Scrolled-x1/Blank/iPhone6-Portrait-Standard-x2-Scrolled-x1.png" class="lightbox"><img src="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Standard-x2-Scrolled-x1/Blank/iPhone6-Portrait-Standard-x2-Scrolled-x1.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone6 portrait standard-scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Standard-x2-Scrolled-x2/Blank/iPhone6-Portrait-Standard-x2-Scrolled-x2.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Standard-x2-Scrolled-x2/Blank/iPhone6-Portrait-Standard-x2-Scrolled-x2.png" class="lightbox"><img src="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Standard-x2-Scrolled-x2/Blank/iPhone6-Portrait-Standard-x2-Scrolled-x2.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone6 portrait scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Scrolled-x2/Blank/iPhone6-Portrait-Scrolled-x2.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Scrolled-x2/Blank/iPhone6-Portrait-Scrolled-x2.png" class="lightbox"><img src="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Scrolled-x2/Blank/iPhone6-Portrait-Scrolled-x2.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone6 portrait scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Scrolled-x3/Blank/iPhone6-Portrait-Scrolled-x3.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Scrolled-x3/Blank/iPhone6-Portrait-Scrolled-x3.png" class="lightbox"><img src="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Scrolled-x3/Blank/iPhone6-Portrait-Scrolled-x3.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone6 portrait scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Scrolled-x4/Blank/iPhone6-Portrait-Scrolled-x4.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Scrolled-x4/Blank/iPhone6-Portrait-Scrolled-x4.png" class="lightbox"><img src="../sketchsheets/iPhone6/Portrait/iPhone6-Portrait-Scrolled-x4/Blank/iPhone6-Portrait-Scrolled-x4.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone6 portrait-landscape standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6/Landscape+Portrait/iPhone6-Portrait-Standard-x1-Landscape-Standard-x1/Blank/iPhone6-Portrait-Standard-x1-Landscape-Standard-x1.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6/Landscape+Portrait/iPhone6-Portrait-Standard-x1-Landscape-Standard-x1/Blank/iPhone6-Portrait-Standard-x1-Landscape-Standard-x1.png" class="lightbox"><img src="../sketchsheets/iPhone6/Landscape+Portrait/iPhone6-Portrait-Standard-x1-Landscape-Standard-x1/Blank/iPhone6-Portrait-Standard-x1-Landscape-Standard-x1.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone6 portrait-landscape standard-scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6/Landscape+Portrait/iPhone6-Portrait-Standard-x1-Landscape-Scrolled-x1/Blank/iPhone6-Portrait-Standard-x1-Landscape-Scrolled-x1.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6/Landscape+Portrait/iPhone6-Portrait-Standard-x1-Landscape-Scrolled-x1/Blank/iPhone6-Portrait-Standard-x1-Landscape-Scrolled-x1.png" class="lightbox"><img src="../sketchsheets/iPhone6/Landscape+Portrait/iPhone6-Portrait-Standard-x1-Landscape-Scrolled-x1/Blank/iPhone6-Portrait-Standard-x1-Landscape-Scrolled-x1.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone6 portrait-landscape scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6/Landscape+Portrait/iPhone6-Portrait-Scrolled-x1-Landscape-Scrolled-x1/Blank/iPhone6-Portrait-Scrolled-x1-Landscape-Scrolled-x1.png"><a href=""> <span>Download</span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6/Landscape+Portrait/iPhone6-Portrait-Scrolled-x1-Landscape-Scrolled-x1/Blank/iPhone6-Portrait-Scrolled-x1-Landscape-Scrolled-x1.png" class="lightbox"><img src="../sketchsheets/iPhone6/Landscape+Portrait/iPhone6-Portrait-Scrolled-x1-Landscape-Scrolled-x1/Blank/iPhone6-Portrait-Scrolled-x1-Landscape-Scrolled-x1.png"></a><a href="" class="downloadzip"> <span>Download</span></a>
                 </div>
               </div>
               <div class="column item iphone6 landscape standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6/Landscape/iPhone6-Landscape-Standard-x2/Blank/iPhone6-Landscape-Standard-x2.png"><a href=""> <span>Download </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6/Landscape/iPhone6-Landscape-Standard-x2/Blank/iPhone6-Landscape-Standard-x2.png" class="lightbox"><img src="../sketchsheets/iPhone6/Landscape/iPhone6-Landscape-Standard-x2/Blank/iPhone6-Landscape-Standard-x2.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
               <div class="column item iphone6 landscape standard-scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6/Landscape/iPhone6-Landscape-Standard-x1-Landscape-Scrolled-x1/Blank/iPhone6-Landscape-Standard-x1-Landscape-Scrolled-x1.png"><a href=""> <span>Download </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6/Landscape/iPhone6-Landscape-Standard-x1-Landscape-Scrolled-x1/Blank/iPhone6-Landscape-Standard-x1-Landscape-Scrolled-x1.png" class="lightbox"><img src="../sketchsheets/iPhone6/Landscape/iPhone6-Landscape-Standard-x1-Landscape-Scrolled-x1/Blank/iPhone6-Landscape-Standard-x1-Landscape-Scrolled-x1.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
               <div class="column item iphone6 landscape scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6/Landscape/iPhone6-Landscape-Scrolled-x2/Blank/iPhone6-Landscape-Scrolled-x2.png"><a href=""> <span>Download</span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6/Landscape/iPhone6-Landscape-Scrolled-x2/Blank/iPhone6-Landscape-Scrolled-x2.png" class="lightbox"><img src="../sketchsheets/iPhone6/Landscape/iPhone6-Landscape-Scrolled-x2/Blank/iPhone6-Landscape-Scrolled-x2.png"></a><a href="" class="downloadzip"> <span>Download</span></a>
                 </div>
               </div>
               <div class="column item iphone6plus portrait standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6Plus/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Standard-x2/Blank/iPhone6Plus-Portrait-Standard-x2.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Standard-x2/Blank/iPhone6Plus-Portrait-Standard-x2.png" class="lightbox"><img src="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Standard-x2/Blank/iPhone6Plus-Portrait-Standard-x2.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone6plus portrait standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6Plus/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Standard-x3/Blank/iPhone6Plus-Portrait-Standard-x3.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Standard-x3/Blank/iPhone6Plus-Portrait-Standard-x3.png" class="lightbox"><img src="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Standard-x3/Blank/iPhone6Plus-Portrait-Standard-x3.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone6plus portrait standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6Plus/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Standard-x4/Blank/iPhone6Plus-Portrait-Standard-x4.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Standard-x4/Blank/iPhone6Plus-Portrait-Standard-x4.png" class="lightbox"><img src="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Standard-x4/Blank/iPhone6Plus-Portrait-Standard-x4.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone6plus portrait standard-scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6Plus/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Standard-x1-Scrolled-x1/Blank/iPhone6Plus-Portrait-Standard-x1-Scrolled-x1.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Standard-x1-Scrolled-x1/Blank/iPhone6Plus-Portrait-Standard-x1-Scrolled-x1.png" class="lightbox"><img src="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Standard-x1-Scrolled-x1/Blank/iPhone6Plus-Portrait-Standard-x1-Scrolled-x1.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone6plus portrait standard-scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6Plus/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Standard-x2-Scrolled-x1/Blank/iPhone6Plus-Portrait-Standard-x2-Scrolled-x1.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Standard-x2-Scrolled-x1/Blank/iPhone6Plus-Portrait-Standard-x2-Scrolled-x1.png" class="lightbox"><img src="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Standard-x2-Scrolled-x1/Blank/iPhone6Plus-Portrait-Standard-x2-Scrolled-x1.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone6plus portrait standard-scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6Plus/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Standard-x2-Scrolled-x2/Blank/iPhone6Plus-Portrait-Standard-x2-Scrolled-x2.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Standard-x2-Scrolled-x2/Blank/iPhone6Plus-Portrait-Standard-x2-Scrolled-x2.png" class="lightbox"><img src="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Standard-x2-Scrolled-x2/Blank/iPhone6Plus-Portrait-Standard-x2-Scrolled-x2.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone6plus portrait scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6Plus/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Scrolled-x2/Blank/iPhone6Plus-Portrait-Scrolled-x2.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Scrolled-x2/Blank/iPhone6Plus-Portrait-Scrolled-x2.png" class="lightbox"><img src="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Scrolled-x2/Blank/iPhone6Plus-Portrait-Scrolled-x2.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone6plus portrait scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6Plus/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Scrolled-x3/Blank/iPhone6Plus-Portrait-Scrolled-x3.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Scrolled-x3/Blank/iPhone6Plus-Portrait-Scrolled-x3.png" class="lightbox"><img src="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Scrolled-x3/Blank/iPhone6Plus-Portrait-Scrolled-x3.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone6plus portrait scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6Plus/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Scrolled-x4/Blank/iPhone6Plus-Portrait-Scrolled-x4.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Scrolled-x4/Blank/iPhone6Plus-Portrait-Scrolled-x4.png" class="lightbox"><img src="../sketchsheets/iPhone6Plus/Portrait/iPhone6Plus-Portrait-Scrolled-x4/Blank/iPhone6Plus-Portrait-Scrolled-x4.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone6plus portrait-landscape standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6Plus/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6Plus/Landscape+Portrait/iPhone6Plus-Portrait-Standard-x1-Landscape-Standard-x1/Blank/iPhone6Plus-Portrait-Standard-x1-Landscape-Standard-x1.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6Plus/Landscape+Portrait/iPhone6Plus-Portrait-Standard-x1-Landscape-Standard-x1/Blank/iPhone6Plus-Portrait-Standard-x1-Landscape-Standard-x1.png" class="lightbox"><img src="../sketchsheets/iPhone6Plus/Landscape+Portrait/iPhone6Plus-Portrait-Standard-x1-Landscape-Standard-x1/Blank/iPhone6Plus-Portrait-Standard-x1-Landscape-Standard-x1.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone6plus portrait-landscape standard-scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6Plus/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6Plus/Landscape+Portrait/iPhone6Plus-Portrait-Standard-x1-Landscape-Scrolled-x1/Blank/iPhone6Plus-Portrait-Standard-x1-Landscape-Scrolled-x1.png"><a href=""> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6Plus/Landscape+Portrait/iPhone6Plus-Portrait-Standard-x1-Landscape-Scrolled-x1/Blank/iPhone6Plus-Portrait-Standard-x1-Landscape-Scrolled-x1.png" class="lightbox"><img src="../sketchsheets/iPhone6Plus/Landscape+Portrait/iPhone6Plus-Portrait-Standard-x1-Landscape-Scrolled-x1/Blank/iPhone6Plus-Portrait-Standard-x1-Landscape-Scrolled-x1.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone6plus portrait-landscape scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6Plus/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6Plus/Landscape+Portrait/iPhone6Plus-Portrait-Scrolled-x1-Landscape-Scrolled-x1/Blank/iPhone6Plus-Portrait-Scrolled-x1-Landscape-Scrolled-x1.png"><a href=""> <span>Download</span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6Plus/Landscape+Portrait/iPhone6Plus-Portrait-Scrolled-x1-Landscape-Scrolled-x1/Blank/iPhone6Plus-Portrait-Scrolled-x1-Landscape-Scrolled-x1.png" class="lightbox"><img src="../sketchsheets/iPhone6Plus/Landscape+Portrait/iPhone6Plus-Portrait-Scrolled-x1-Landscape-Scrolled-x1/Blank/iPhone6Plus-Portrait-Scrolled-x1-Landscape-Scrolled-x1.png"></a><a href="" class="downloadzip"> <span>Download</span></a>
                 </div>
               </div>
               <div class="column item iphone6plus landscape standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6Plus/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6Plus/Landscape/iPhone6Plus-Landscape-Standard-x2/Blank/iPhone6Plus-Landscape-Standard-x2.png"><a href=""> <span>Download </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6Plus/Landscape/iPhone6Plus-Landscape-Standard-x2/Blank/iPhone6Plus-Landscape-Standard-x2.png" class="lightbox"><img src="../sketchsheets/iPhone6Plus/Landscape/iPhone6Plus-Landscape-Standard-x2/Blank/iPhone6Plus-Landscape-Standard-x2.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
               <div class="column item iphone6plus landscape standard-scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6Plus/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6Plus/Landscape/iPhone6Plus-Landscape-Standard-x1-Landscape-Scrolled-x1/Blank/iPhone6Plus-Landscape-Standard-x1-Landscape-Scrolled-x1.png"><a href=""> <span>Download </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6Plus/Landscape/iPhone6Plus-Landscape-Standard-x1-Landscape-Scrolled-x1/Blank/iPhone6Plus-Landscape-Standard-x1-Landscape-Scrolled-x1.png" class="lightbox"><img src="../sketchsheets/iPhone6Plus/Landscape/iPhone6Plus-Landscape-Standard-x1-Landscape-Scrolled-x1/Blank/iPhone6Plus-Landscape-Standard-x1-Landscape-Scrolled-x1.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
               <div class="column item iphone6plus landscape scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone6Plus/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPhone6Plus/Landscape/iPhone6Plus-Landscape-Scrolled-x2/Blank/iPhone6Plus-Landscape-Scrolled-x2.png"><a href=""> <span>Download</span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6Plus/Landscape/iPhone6Plus-Landscape-Scrolled-x2/Blank/iPhone6Plus-Landscape-Scrolled-x2.png" class="lightbox"><img src="../sketchsheets/iPhone6Plus/Landscape/iPhone6Plus-Landscape-Scrolled-x2/Blank/iPhone6Plus-Landscape-Scrolled-x2.png"></a><a href="" class="downloadzip"> <span>Download</span></a>
                 </div>
               </div>
               <div class="column item ipad portrait">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPad/Portrait/iPad-Portrait-x1/Blank/iPad-Portrait-x1.png"><a href=""> <span>Download </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Portrait/iPad-Portrait-x1/Blank/iPad-Portrait-x1.png" class="lightbox"><img src="../sketchsheets/iPad/Portrait/iPad-Portrait-x1/Blank/iPad-Portrait-x1.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
               <div class="column item ipad portrait">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPad/Portrait/iPad-Portrait-Multitask-x1/Blank/iPad-Portrait-Multitask-x1.png"><a href=""> <span>Download </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Portrait/iPad-Portrait-Multitask-x1/Blank/iPad-Portrait-Multitask-x1.png" class="lightbox"><img src="../sketchsheets/iPad/Portrait/iPad-Portrait-Multitask-x1/Blank/iPad-Portrait-Multitask-x1.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
               <div class="column item ipad portrait">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPad/Portrait/iPad-Portrait-x2/Blank/iPad-Portrait-x2.png"><a href=""> <span>Download </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Portrait/iPad-Portrait-x2/Blank/iPad-Portrait-x2.png" class="lightbox"><img src="../sketchsheets/iPad/Portrait/iPad-Portrait-x2/Blank/iPad-Portrait-x2.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
               <div class="column item ipad portrait">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPad/Portrait/iPad-Portrait-x1-Multitask-x1/Blank/iPad-Portrait-x1-Multitask-x1.png"><a href=""> <span>Download </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Portrait/iPad-Portrait-x1-Multitask-x1/Blank/iPad-Portrait-x1-Multitask-x1.png" class="lightbox"><img src="../sketchsheets/iPad/Portrait/iPad-Portrait-x1-Multitask-x1/Blank/iPad-Portrait-x1-Multitask-x1.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
               <div class="column item ipad portrait">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPad/Portrait/iPad-Portrait-Multitask-x2/Blank/iPad-Portrait-Multitask-x2.png"><a href=""> <span>Download </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Portrait/iPad-Portrait-Multitask-x2/Blank/iPad-Portrait-Multitask-x2.png" class="lightbox"><img src="../sketchsheets/iPad/Portrait/iPad-Portrait-Multitask-x2/Blank/iPad-Portrait-Multitask-x2.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
               <div class="column item ipad landscape">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPad/Landscape/iPad-Landscape-x1/Blank/iPad-Landscape-x1.png"><a href=""> <span>Download </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Landscape/iPad-Landscape-x1/Blank/iPad-Landscape-x1.png" class="lightbox"><img src="../sketchsheets/iPad/Landscape/iPad-Landscape-x1/Blank/iPad-Landscape-x1.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
               <div class="column item ipad landscape">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPad/Landscape/iPad-Landscape-Multitask-x1-A/Blank/iPad-Landscape-Multitask-x1-A.png"><a href=""> <span>Download </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Landscape/iPad-Landscape-Multitask-x1-A/Blank/iPad-Landscape-Multitask-x1-A.png" class="lightbox"><img src="../sketchsheets/iPad/Landscape/iPad-Landscape-Multitask-x1-A/Blank/iPad-Landscape-Multitask-x1-A.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
               <div class="column item ipad landscape">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPad/Landscape/iPad-Landscape-Multitask-x1-B/Blank/iPad-Landscape-Multitask-x1-B.png"><a href=""> <span>Download </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Landscape/iPad-Landscape-Multitask-x1-B/Blank/iPad-Landscape-Multitask-x1-B.png" class="lightbox"><img src="../sketchsheets/iPad/Landscape/iPad-Landscape-Multitask-x1-B/Blank/iPad-Landscape-Multitask-x1-B.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
               <div class="column item ipad landscape">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPad/Landscape/iPad-Landscape-x2/Blank/iPad-Landscape-x2.png"><a href=""> <span>Download </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Landscape/iPad-Landscape-x2/Blank/iPad-Landscape-x2.png" class="lightbox"><img src="../sketchsheets/iPad/Landscape/iPad-Landscape-x2/Blank/iPad-Landscape-x2.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
               <div class="column item ipad landscape">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPad/Landscape/iPad-Landscape-x1-Multitask-x1-A/Blank/iPad-Landscape-x1-Multitask-x1-A.png"><a href=""> <span>Download </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Landscape/iPad-Landscape-x1-Multitask-x1-A/Blank/iPad-Landscape-x1-Multitask-x1-A.png" class="lightbox"><img src="../sketchsheets/iPad/Landscape/iPad-Landscape-x1-Multitask-x1-A/Blank/iPad-Landscape-x1-Multitask-x1-A.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
               <div class="column item ipad landscape">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPad/Landscape/iPad-Landscape-x1-Multitask-x1-B/Blank/iPad-Landscape-x1-Multitask-x1-B.png"><a href=""> <span>Download </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Landscape/iPad-Landscape-x1-Multitask-x1-B/Blank/iPad-Landscape-x1-Multitask-x1-B.png" class="lightbox"><img src="../sketchsheets/iPad/Landscape/iPad-Landscape-x1-Multitask-x1-B/Blank/iPad-Landscape-x1-Multitask-x1-B.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
               <div class="column item ipad landscape">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPad/Landscape/iPad-Landscape-Multitask-x2-A/Blank/iPad-Landscape-Multitask-x2-A.png"><a href=""> <span>Download </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Landscape/iPad-Landscape-Multitask-x2-A/Blank/iPad-Landscape-Multitask-x2-A.png" class="lightbox"><img src="../sketchsheets/iPad/Landscape/iPad-Landscape-Multitask-x2-A/Blank/iPad-Landscape-Multitask-x2-A.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
               <div class="column item ipad landscape">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><img src="../sketchsheets/iPad/Landscape/iPad-Landscape-Multitask-x2-B/Blank/iPad-Landscape-Multitask-x2-B.png"><a href=""> <span>Download </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Landscape/iPad-Landscape-Multitask-x2-B/Blank/iPad-Landscape-Multitask-x2-B.png" class="lightbox"><img src="../sketchsheets/iPad/Landscape/iPad-Landscape-Multitask-x2-B/Blank/iPad-Landscape-Multitask-x2-B.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
             </div>
@@ -499,9 +499,11 @@ unset($_POST);
         </section>
       </div>
     </div>
-    <script src="../js/jquery-1.12.0.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.0.0/imagesloaded.pkgd.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
     <script src="../js/isotope.pkgd.min.js"></script>
+    <script src="../js/jquery.fluidbox.min.js"></script>
     <script src="../js/classie.js"></script>
     <script src="../js/scripts.js"></script>
   </body>

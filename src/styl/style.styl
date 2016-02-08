@@ -33,14 +33,12 @@ $text-dark = #001030
 $accent-color = #00CEFC
 
 card()
-  -webkit-transform: rotate(0.000001deg);
   display block
   position relative
   box-shadow 0 1px 3px rgba(0,0,0,0.1)
   background #FFFFFF
   border-radius $border-radius
   padding 60px 10px
-  overflow hidden
   
 card-contrast()
   box-shadow 0 1px 3px rgba(0,0,0,0.1)
@@ -58,7 +56,7 @@ body
   
 a
   text-decoration none
-  color $text-dark
+  color alpha($text-dark, 0.3)
   font-weight 400
   &:hover
   &.active
@@ -79,7 +77,10 @@ button
   
 .card
   card()
-  > img
+  a.lightbox
+    &:hover
+      cursor zoom-in
+  img
     width 100%
   
 .hero
@@ -215,6 +216,7 @@ button.download-collection-button
         color $text-dark
       button
         margin 1px 0
+        color alpha($text-dark, 0.5)
         &:last-of-type
           margin-bottom 10px
         &:hover
@@ -233,7 +235,8 @@ button.download-collection-button
         display none
         position absolute
         text-align center
-        z-index 15
+        z-index 1000
+        border-radius $border-radius        
         top 0
         left 0
         bottom 0
@@ -249,7 +252,7 @@ button.download-collection-button
           color $accent-color
           font-size 13px
       > input
-        z-index 50
+        z-index 1010
         position absolute
         top 20px
         right 20px
@@ -272,7 +275,7 @@ button.download-collection-button
             > i 
               color $accent-color
       > span
-        z-index 40
+        z-index 1000
         position absolute
         top 20px
         right 20px
@@ -292,7 +295,7 @@ button.download-collection-button
             display block
           &.icon-check
             display none
-      > a 
+      > .downloadzip
         position absolute
         color $accent-color
         padding 25px 0
@@ -340,3 +343,111 @@ button.download-collection-button
       > .column.column.item
         width (100/3) + '%'
   
+// Fluidbox
+
+@-webkit-keyframes
+  fluidboxLoading
+    0%{-webkit-transform translate(-50%, -50%) rotateX(0) rotateY(0)
+
+50%
+  -webkit-transform translate(-50%, -50%) rotateX(-180deg) rotateY(0)
+  transform translate(-50%, -50%) rotateX(-180deg) rotateY(0)
+
+100%
+  -webkit-transform translate(-50%, -50%) rotateX(-180deg) rotateY(-180deg)
+  transform translate(-50%, -50%) rotateX(-180deg) rotateY(-180deg)
+
+}@keyframes
+  fluidboxLoading
+    0%{transform translate(-50%, -50%) rotateX(0) rotateY(0)
+
+}.fluidbox
+  outline none
+
+.fluidbox__overlay
+  background-color rgba(0,0,0,0.85)
+  cursor pointer
+  cursor -webkit-zoom-out
+  cursor -moz-zoom-out
+  cursor zoom-out
+  opacity 0
+  pointer-events none
+  position fixed
+  top 0
+  left 0
+  bottom 0
+  right 0
+  transition all 0.5s ease-in-out
+
+.fluidbox--opened
+  .fluidbox__overlay
+    pointer-events auto
+  .fluidbox__ghost
+    cursor pointer
+    cursor -webkit-zoom-out
+    cursor -moz-zoom-out
+    cursor zoom-out
+
+.fluidbox__wrap
+  background-position center center
+  background-size cover
+  margin 0 auto
+  position relative
+  transition all 0.5s ease-in-out
+
+.fluidbox__thumb
+  transition opacity 0s ease-in-out 0s
+
+.fluidbox--closed
+  .fluidbox__thumb
+    transition opacity 0s ease-in-out 0s
+  .fluidbox__ghost
+    transition-delay 0.5s,0s
+
+.fluidbox__ghost
+  background-size 100% 100%
+  background-position center center
+  background-repeat no-repeat
+  position absolute
+  -webkit-transition-property opacity, -webkit-transform
+  -moz-transition-property opacity, -moz-transform
+  -o-transition-property opacity, -o-transform
+  transition-property opacity, transform
+  transition-duration 0s,0.5s
+  transition-delay 0s
+
+.fluidbox__loader
+  -webkit-perspective 200px
+  perspective 200px
+  opacity 0
+  pointer-events none
+  position absolute
+  top 0
+  left 0
+  bottom 0
+  right 0
+  &::before
+    background-color rgba(255,255,255,0.85)
+    content ''
+    transform-style preserve-3d
+    position absolute
+    top 50%
+    left 50%
+    width 20%
+    padding-bottom 20%
+    -webkit-transform translate(-50%, -50%)
+    transform translate(-50%, -50%)
+    -webkit-transition-property -webkit-transform
+    -moz-transition-property -moz-transform
+    -o-transition-property -o-transform
+    transition-property transform
+    transition-duration 0.5s
+    transition-delay 0s
+
+.fluidbox--loading
+  .fluidbox__loader
+    opacity 1
+    transition opacity 0.5s ease-in-out 0.5s
+    &::before
+      -webkit-animation fluidboxLoading 1s 0s infinite ease-in-out forwards
+      animation fluidboxLoading 1s 0s infinite ease-in-out forwards

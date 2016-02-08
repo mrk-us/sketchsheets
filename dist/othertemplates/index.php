@@ -127,9 +127,11 @@ unset($_POST);
         </section>
       </div>
     </div>
-    <script src="../js/jquery-1.12.0.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.0.0/imagesloaded.pkgd.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
     <script src="../js/isotope.pkgd.min.js"></script>
+    <script src="../js/jquery.fluidbox.min.js"></script>
     <script src="../js/classie.js"></script>
     <script src="../js/scripts.js"></script>
   </body>
