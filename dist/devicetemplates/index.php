@@ -110,7 +110,8 @@ unset($_POST);
             <div class="column twelve">
               <div class="filter">
                 <div data-filter-group="device" class="filter-list"><span>Device</span>
-                  <button data-filter=".iphone5" class="button checked">iPhone 5</button>
+                  <button data-filter="" class="button checked">All</button>
+                  <button data-filter=".iphone5" class="button">iPhone 5</button>
                   <button data-filter=".iphone6" class="button">iPhone 6</button>
                   <button data-filter=".iphone6plus" class="button">iPhone 6 Plus</button>
                   <button data-filter=".ipad" class="button">iPad</button>
