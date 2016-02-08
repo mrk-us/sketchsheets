@@ -167,13 +167,13 @@ unset($_POST);
               <div class="column item iphone5 portrait standard-scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone5/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x1-Scrolled-x1/Blank/iPhone5-Portrait-Standard-x1-Scrolled-x1.png" class="lightbox"></a><img src="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x1-Scrolled-x1/Blank/iPhone5-Portrait-Standard-x1-Scrolled-x1.png"><a href="" class="downloadzip"> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x1-Scrolled-x1/Blank/iPhone5-Portrait-Standard-x1-Scrolled-x1.png" class="lightbox"><img src="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x1-Scrolled-x1/Blank/iPhone5-Portrait-Standard-x1-Scrolled-x1.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone5 portrait standard-scrolled">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPhone5/">
-                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x2-Scrolled-x1/Blank/iPhone5-Portrait-Standard-x2-Scrolled-x1.png" class="lightbox"></a><img src="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x2-Scrolled-x1/Blank/iPhone5-Portrait-Standard-x2-Scrolled-x1.png"><a href="" class="downloadzip"> <span>Download                  </span></a>
+                  <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x2-Scrolled-x1/Blank/iPhone5-Portrait-Standard-x2-Scrolled-x1.png" class="lightbox"><img src="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x2-Scrolled-x1/Blank/iPhone5-Portrait-Standard-x2-Scrolled-x1.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
               <div class="column item iphone5 portrait standard-scrolled">
