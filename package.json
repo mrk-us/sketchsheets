@@ -1,7 +1,7 @@
 {
-  "name": "Stump",
+  "name": "Sketchsheets",
   "version": "0.0.1",
-  "description": "Jade, Stylus Gulp Boilerplate",
+  "description": "Free sketch sheets for UI & UX designers",
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.0",
@@ -19,15 +19,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rnarrkus/stump"
+    "url": "https://github.com/rnarrkus/sketchsheets"
   },
   "author": "Mark Wilson",
   "license": "MIT",
   "homepage": "https://markwil.so",
   "keywords": [
-    "jade",
-    "stylus",
-    "gulp",
-    "boilerplate"
+    "sketch",
+    "sketchsheets",
+    "ui",
+    "ux",
+    "design"
   ]
 }
