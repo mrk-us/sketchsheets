@@ -3,6 +3,7 @@
 
 h1
   font-size $h1-size
+  font-weight 400
 
 h2
   font-size $h2-size
@@ -31,25 +32,36 @@ $font = 'Hind', 'Helvetica Neue', 'Arial', sans-serif
 $border-radius = 8px
 $text-dark = #001030
 $accent-color = #00CEFC
-
+$purple = #6C63FF
+  
 card()
   display block
   position relative
-  box-shadow 0 1px 3px rgba(0,0,0,0.1)
+  border 1px solid alpha($text-dark, 0.15)
   background #FFFFFF
   border-radius $border-radius
   padding 60px 10px
   
-card-contrast()
-  box-shadow 0 1px 3px rgba(0,0,0,0.1)
-  background url(../img/hero1.png) no-repeat
-  background-size cover
-  border-radius $border-radius + 4px
-  overflow hidden
+slide3()
+  background repeating-linear-gradient(
+  45deg,
+  #fff,
+  #fff 4px,
+  alpha(#465298, 0.1) 1px,
+  alpha(#465298, 0.1) 5px)
+  
+slide2()
+  background url(../img/hero2.png) center center no-repeat
+  background-size cover 105%
+  
+slide1()
+  background url(../img/hero3.png) center center no-repeat
+  background-size cover 105%
 
 body
   font 400 10px $font
-  background #F5F7FA
+  background #FFFFFF
+//  background #F5F7FA
 //  -webkit-font-smoothing: antialiased;
 //  -moz-osx-font-smoothing: grayscale;
 //  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
@@ -60,7 +72,7 @@ a
   font-weight 400
   &:hover
   &.active
-    color $accent-color
+    color $purple
     
 button
   display block
@@ -83,30 +95,8 @@ button
   img
     width 100%
   
-.hero
-  card-contrast()
-  margin 30px 10px 50px 10px
-  height 240px
-  padding 20px
-  @media (min-width 600px)
-    height 300px
-  > *
-    text-align center
-    > h3
-      text-align center
-      color #FFFFFF
-      font-weight 300
-      margin 10px 0
-    > a 
-      width 22px
-      margin auto
-      display block
-      > i 
-        font-size 22px
-        color #FFFFFF
-  
 .logo
-  background url(../img/logo.png) no-repeat
+  background url(../img/logo.svg) no-repeat
   background-size contain
   height 16px
   width 118px
@@ -119,12 +109,12 @@ button
     height 100%
   
 nav
-  margin 30px 0 0 0
-  padding 15px
+  margin 40px 0 30px 0
+  padding 0 15px
   ul
     text-align center
     list-style none
-    margin 20px 0
+    margin 0
     @media (min-width 600px)
       float right
       text-align right
@@ -140,6 +130,49 @@ nav
         padding-right 0
       @media (min-width 900px)
         padding 0 20px
+      span 
+        opacity 0.3
+        cursor not-allowed
+        
+  
+.hero
+  margin 0 10px 50px 10px
+  position relative
+  .swiper-container
+    border-radius 8px
+    overflow hidden
+    .swiper-wrapper
+      width 100%
+      height 300px
+      .swiper-slide
+        width 100%
+        height 100%
+        &:nth-of-type(1)
+          slide1()
+          a
+            color #FFFFFF
+          p 
+            opacity 0.25
+        &:nth-of-type(2)
+          slide2()
+          a
+            color #FFFFFF
+          p 
+            opacity 0.5
+        &:nth-of-type(3)
+          slide3()
+          a
+            color $text-dark
+          p 
+            opacity 0.3
+        .row
+          height 100%
+          .column
+            text-align center
+            p i 
+              font-size 28px
+            p, h1
+              margin 0.75em 0
         
 .download
   margin-bottom 20px
@@ -147,29 +180,37 @@ nav
     width auto
     
 button.download-collection-button
-  background rgba(55,175,208,0.06)
-  padding 18px 30px
+  &.disabled
+    cursor not-allowed
+  border 1px solid $purple
+  padding 22px 0
   margin-bottom 40px
+  text-align center
+  position relative
   &:hover
-    > span.button-label
-      color $accent-color
-  > span.button-label
-    display block
-    color $accent-color
-    float left
-  > .collection-total
+    > .button-label
+      color alpha($purple, 0.8)
+        &.disabled
+          color $purple
+  > .button-label
     position relative
-    float right
-    display none
+    text-align right
+    padding-right 20px
+    width 80%
+    float left
+    color $purple
+  > .collection-total
+    width 20%
+    position relative
+    float left
+    margin-top -1px
     > span.collection-total-count
       display block
-      top 8px
-      right 8px
+      padding-right 1px
       position absolute
-      background #C4C8CB
-      border 1px solid #F5F7FA
-      color #FFFFFF
-      border-radius: 100px
+      border 1px solid alpha($text-dark, 0.25)
+      color alpha($text-dark, 0.25)
+      border-radius: 4px
       width 18px
       height 18px
       font-size 10px
@@ -179,7 +220,8 @@ button.download-collection-button
       transition 300ms
       -webkit-transition 300ms
       &.color
-        background #FF4486 !important
+        border 1px solid $purple !important
+        color $purple !important
 
 .collection-total i 
   display block
@@ -216,13 +258,12 @@ button.download-collection-button
         color $text-dark
       button
         margin 1px 0
-        color alpha($text-dark, 0.5)
+        color alpha($text-dark, 0.25)
         &:last-of-type
           margin-bottom 10px
         &:hover
         &.checked
-          color $accent-color
-          background rgba(55,175,208,0.06)
+          color $purple
         
 .grid
   margin-bottom 40px
@@ -243,14 +284,15 @@ button.download-collection-button
         right 0
         height 100%
         width 100%
-        background alpha(#000F2B, 0.8)
+        background alpha(#ffffff, 0.9)
+        border 1px solid $purple
         > span
           position absolute
           left 0
           right 0
-          bottom 20px
-          color $accent-color
-          font-size 13px
+          top 48%
+          color $purple
+          font-size 14px
       > input
         z-index 1010
         position absolute
@@ -262,7 +304,7 @@ button.download-collection-button
         opacity 0
         &:checked
           ~ span
-            border 1px solid $accent-color
+            border 1px solid $purple
             > i.icon-plus
               display none
             > i.icon-check
@@ -271,9 +313,9 @@ button.download-collection-button
             display block !important
         &:hover
           ~ span
-            background rgba(55,175,208,0.1)
+            border 1px solid $purple
             > i 
-              color $accent-color
+              color $purple
       > span
         z-index 1000
         position absolute
@@ -281,7 +323,6 @@ button.download-collection-button
         right 20px
         border-radius $border-radius
         display block
-        background rgba(55,175,208,0.06)
         border 1px solid rgba(0,0,0,0)
         width 36px
         height 36px
@@ -290,21 +331,21 @@ button.download-collection-button
           font-size 15px
           left 9px
           top 9px
-          color $accent-color
+          color $purple
           &.icon-plus
             display block
           &.icon-check
             display none
       > .downloadzip
         position absolute
-        color $accent-color
+        color $purple
         padding 25px 0
         bottom 0
         left 0
         right 0
         text-align center
         font-size 14px
-        font-weight 500
+        font-weight 400
         &:hover
           color #0AAECF
         > span
@@ -324,8 +365,8 @@ button.download-collection-button
 @media (min-width 600px)
   .row
     > aside.column.column.aside-left
-      width 220px
-      margin-right 65px
+      width 260px
+      margin-right 25px
     > section.column.column.aside-right
       width calc(100% - 300px)
       margin-right 15px

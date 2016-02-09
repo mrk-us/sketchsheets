@@ -1,6 +1,13 @@
 $(function () {
   $('a.lightbox').fluidbox({
+    loader: true
   });
+});
+var swiper = new Swiper('.swiper-container', {
+  pagination: '.swiper-pagination',
+  paginationClickable: true,
+  autoplay: 7500,
+  autoplayDisableOnInteraction: false
 });
 $(document).ready( function() {
   // init Isotope
