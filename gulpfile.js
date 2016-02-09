@@ -124,11 +124,9 @@ gulp.task('othertemplates', function() {
 gulp.task('stylus', function() {
   return gulp.src(config.css.src)
     .pipe(plumber())
-    .pipe(sourcemaps.init())
     .pipe(stylus({
-      compress: false
+      compress: true
     }))
-    .pipe(sourcemaps.write())
     .pipe(rename('style.css'))
     .pipe(gulp.dest(config.css.destination));
 });

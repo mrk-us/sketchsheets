@@ -27,20 +27,22 @@ p
   font-size $p-size
   line-height $line-height
   margin 1em 0
-
-$font = 'Hind', 'Helvetica Neue', 'Arial', sans-serif
-$border-radius = 8px
-$text-dark = #001030
-$accent-color = #00CEFC
-$purple = #6C63FF
   
 card()
   display block
   position relative
-  border 1px solid alpha($text-dark, 0.15)
+  border 1px solid $lightest
   background #FFFFFF
   border-radius $border-radius
   padding 60px 10px
+  
+slide1()
+  background url(../img/hero3.png) center center no-repeat
+  background-size cover 105%
+  
+slide2()
+  background url(../img/hero2.png) center center no-repeat
+  background-size cover 105%
   
 slide3()
   background repeating-linear-gradient(
@@ -49,65 +51,19 @@ slide3()
   #fff 4px,
   alpha(#465298, 0.1) 1px,
   alpha(#465298, 0.1) 5px)
-  
-slide2()
-  background url(../img/hero2.png) center center no-repeat
-  background-size cover 105%
-  
-slide1()
-  background url(../img/hero3.png) center center no-repeat
-  background-size cover 105%
 
 body
   font 400 10px $font
   background #FFFFFF
-//  background #F5F7FA
-//  -webkit-font-smoothing: antialiased;
-//  -moz-osx-font-smoothing: grayscale;
-//  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
   
 a
   text-decoration none
-  color alpha($text-dark, 0.3)
+  color $light
   font-weight 400
   &:hover
-  &.active
     color $purple
-    
-button
-  display block
-  background none
-  border none
-  outline none
-  width 100%
-  text-align left
-  font-size 13px
-  padding 8px 15px
-  color $text-dark
-  border-radius $border-radius - 2px
-  cursor pointer
-  
-.card
-  card()
-  a.lightbox
-    &:hover
-      cursor zoom-in
-  img
-    width 100%
-  
-.logo
-  background url(../img/logo.svg) no-repeat
-  background-size contain
-  height 16px
-  width 118px
-  margin 0 auto 20px auto
-  @media (min-width 600px)
-    margin 0 0 6px 0
-  > a 
-    display block
-    width 100%
-    height 100%
-  
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\ Navigation
 nav
   margin 40px 0 30px 0
   padding 0 15px
@@ -118,9 +74,7 @@ nav
     @media (min-width 600px)
       float right
       text-align right
-    @media (min-width 600px)
-      margin 0
-    > li 
+    li 
       display inline-block
       padding 0 10px
       font-size 14px
@@ -130,11 +84,26 @@ nav
         padding-right 0
       @media (min-width 900px)
         padding 0 20px
+      > a.active
+        color $purple
       span 
-        color alpha($text-dark, 0.3)
+        color $light
         cursor not-allowed
-        
-  
+  .logo
+    background url(../img/logo.svg) no-repeat
+    background-size contain
+    height 16px
+    width 118px
+    margin 0 auto 20px auto
+    @media (min-width 600px)
+      margin 0 0 6px 0
+    > a 
+      display block
+      width 100%
+      height 100%
+      
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\ Hero      
 .hero
   margin 0 10px 50px 10px
   position relative
@@ -162,7 +131,7 @@ nav
         &:nth-of-type(3)
           slide3()
           a
-            color $text-dark
+            color $dark
           p 
             opacity 0.3
         .row
@@ -173,18 +142,62 @@ nav
               font-size 28px
             p, h1
               margin 0.75em 0
-        
-.download
-  margin-bottom 20px
-  button
-    width auto
+              
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\ Sidebar 
+.row
+  > section.column.column.aside-right
+    margin-top 30px
+
+@media (min-width 600px)
+  .row
+    > aside.column.column.aside-left
+      width 260px
+      margin-right 25px
+      margin-bottom 200px
+    > section.column.column.aside-right
+      width calc(100% - 300px)
+      margin-right 15px
+      margin-top 0
+      
+.sidebar
+  .filter
+    .filter-list
+      span 
+        display block
+        padding 0 0 12px 15px
+        font-size 14px
+        font-weight 500
+        color $text-dark
+      button
+        margin 1px 0
+        color $lighter
+        &:last-of-type
+          margin-bottom 10px
+        &:hover
+        &.checked
+          color $purple
+    
+button
+  display block
+  background none
+  border none
+  outline none
+  width 100%
+  text-align left
+  font-size 13px
+  padding 8px 15px
+  color $text-dark
+  border-radius $border-radius - 2px
+  cursor pointer
+
     
 button.download-collection-button
   &.disabled
     cursor not-allowed
-    border 1px solid alpha($text-dark, 0.15)
+    border 1px solid $lightest
     > .button-label
-      color alpha($text-dark, 0.3)
+      color $light
     &:hover
       opacity 1
   border 1px solid $purple
@@ -210,12 +223,16 @@ button.download-collection-button
     float left
     position relative
     margin-top -1px
+    i 
+      display block
+      font-size 20px
+      color #C4C8CB
     > span.collection-total-count
       display block
       padding-right 1px
       position absolute
-      border 1px solid alpha($text-dark, 0.25)
-      color alpha($text-dark, 0.25)
+      border 1px solid $lighter
+      color $lighter
       border-radius: 4px
       width 18px
       height 18px
@@ -229,10 +246,6 @@ button.download-collection-button
         border 1px solid $purple !important
         color $purple !important
 
-.collection-total i 
-  display block
-  font-size 20px
-  color #C4C8CB
 .countAnim 
   -webkit-animation countAnim 350ms forwards
   animation countAnim 350ms forwards
@@ -252,25 +265,9 @@ button.download-collection-button
     opacity 1
     -webkit-transform translate3d(0, 0, 0)
     transform translate3d(0, 0, 0)
-        
-.sidebar
-  .filter
-    .filter-list
-      span 
-        display block
-        padding 0 0 12px 15px
-        font-size 14px
-        font-weight 500
-        color $text-dark
-      button
-        margin 1px 0
-        color alpha($text-dark, 0.25)
-        &:last-of-type
-          margin-bottom 10px
-        &:hover
-        &.checked
-          color $purple
-        
+    
+    
+//\\//\\//\\//\\//\\//\\//\\//\\//\\ Grid
 .grid
   margin-bottom 200px
   
@@ -278,8 +275,14 @@ button.download-collection-button
   > .column.column.item
     width 100%
     > .card
+      card()
+      a.lightbox
+        &:hover
+          cursor zoom-in
+      img
+        width 100%
       &.border
-        border 1px solid $purple !important
+        border 1px solid $purple !important 
       > .overlay
         display none
         position absolute
@@ -364,12 +367,27 @@ button.download-collection-button
           display inline-block
           margin auto
           
+@media (min-width 900px)
+  section
+    .row
+      > .column.column.item
+        width 50%
+        
+@media (min-width 1200px)
+  section
+    .row
+      > .column.column.item
+        width (100/3) + '%'
+          
+.download
+  margin-bottom 20px
+  button
+    width auto
+          
 .zipit
   display none
   
-.row
-  > section.column.column.aside-right
-    margin-top 30px
+//\\//\\//\\//\\//\\//\\//\\//\\//\\ Footer
     
 .footer
   background #FAFBFC
@@ -378,7 +396,7 @@ button.download-collection-button
   h6
     margin 0.5em auto
     width 50%
-    color alpha($text-dark, 0.3)
+    color $light
   ul 
     margin 0 auto
     list-style none
@@ -388,7 +406,7 @@ button.download-collection-button
       padding 5px 0
   p 
     text-align center
-    color alpha($text-dark, 0.3)
+    color $light
   span 
     position relative
     display inline-block
@@ -401,32 +419,3 @@ button.download-collection-button
       left 0
       font-size 18px
       color #FF82A2
-      
-article
-  margin 200px 0
-    
-@media (min-width 400px)
-  // css
-        
-@media (min-width 600px)
-  .row
-    > aside.column.column.aside-left
-      width 260px
-      margin-right 25px
-      margin-bottom 200px
-    > section.column.column.aside-right
-      width calc(100% - 300px)
-      margin-right 15px
-      margin-top 0
-        
-@media (min-width 900px)
-  section
-    .row
-      > .column.column.item
-        width 50%
-        
-@media (min-width 1200px)
-  section
-    .row
-      > .column.column.item
-        width (100/3) + '%'
