@@ -182,16 +182,18 @@ nav
 button.download-collection-button
   &.disabled
     cursor not-allowed
+    border 1px solid alpha($text-dark, 0.15)
+    > .button-label
+      color alpha($text-dark, 0.3)
+    &:hover
+      opacity 1
   border 1px solid $purple
   padding 22px 0
   margin-bottom 40px
   text-align center
   position relative
   &:hover
-    > .button-label
-      color alpha($purple, 0.8)
-        &.disabled
-          color $purple
+    opacity 0.8
   > .button-label
     position relative
     width 67%
@@ -276,6 +278,8 @@ button.download-collection-button
   > .column.column.item
     width 100%
     > .card
+      &.border
+        border 1px solid $purple !important
       > .overlay
         display none
         position absolute
@@ -289,7 +293,6 @@ button.download-collection-button
         height 100%
         width 100%
         background alpha(#ffffff, 0.9)
-        border 1px solid $purple
         > span
           position absolute
           left 0
@@ -315,9 +318,14 @@ button.download-collection-button
               display block !important
           ~ .overlay
             display block !important
+          &:hover
+            ~ span
+              border 1px solid alpha($purple, 0.8)
+              > i 
+                color $purple
         &:hover
           ~ span
-            border 1px solid $purple
+            border 1px solid alpha($purple, 0.8)
             > i 
               color $purple
       > span
@@ -351,7 +359,7 @@ button.download-collection-button
         font-size 14px
         font-weight 400
         &:hover
-          color #0AAECF
+          color alpha($purple, 0.8)
         > span
           display inline-block
           margin auto

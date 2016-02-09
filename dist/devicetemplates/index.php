@@ -132,7 +132,7 @@ unset($_POST);
             <div class="column twelve">
               <div class="download-collection">
                 <button class="disabled download-collection-button">
-                  <div class="button-label disabled">Download Collection</div>
+                  <div class="button-label">Download Collection</div>
                   <div class="collection-total"><span class="collection-total-count">0</span></div>
                 </button>
               </div>

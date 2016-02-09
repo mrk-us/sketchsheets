@@ -44,10 +44,13 @@ $(document).ready( function() {
   
   // Total in collection
   var checkbox = $('input[name="files[]"]'),
-      label = document.querySelector(".collection-total-count");
+      label = document.querySelector('.collection-total-count'),
+      downloadCollection = document.querySelector('.download-collection-button');
 
   checkbox.change(function() {
     var total= $('input[name="files[]"]:checked').length;
+    var card = $(this).parent();
+    card.toggleClass('border');
     // Get total :checked
     checkbox.each(function() {
       $(label).html(total);
@@ -56,10 +59,15 @@ $(document).ready( function() {
     // Add red bg color if > 0
     if (total > 0) 
       { classie.add(label, 'color');
+        classie.remove(downloadCollection, 'disabled');
+        $(downloadCollection).on('click', function () {
+          $('input[name="zipit"]').trigger("click");
+        });
       }
     // Remove red bg color if 0
     else
       { classie.remove(label, 'color');
+        classie.add(downloadCollection, 'disabled');
       }
     // Add count animation
     classie.add(label, 'countAnim');
@@ -69,9 +77,6 @@ $(document).ready( function() {
     }, 350);
   });
   
-  $('.download-collection-button').on('click', function () {
-    $('input[name="zipit"]').trigger("click");
-  });
   // flatten object by concatting values
   function concatValues( obj ) {
     var value = '';
