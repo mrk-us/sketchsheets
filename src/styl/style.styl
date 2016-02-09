@@ -131,7 +131,7 @@ nav
       @media (min-width 900px)
         padding 0 20px
       span 
-        opacity 0.3
+        color alpha($text-dark, 0.3)
         cursor not-allowed
         
   
@@ -266,7 +266,7 @@ button.download-collection-button
           color $purple
         
 .grid
-  margin-bottom 40px
+  margin-bottom 200px
   
 .row
   > .column.column.item
@@ -358,6 +358,37 @@ button.download-collection-button
 .row
   > section.column.column.aside-right
     margin-top 30px
+    
+.footer
+  background #FAFBFC
+  .footer-links
+    padding 250px 0
+  h6
+    margin 0.5em auto
+    width 50%
+    color alpha($text-dark, 0.3)
+  ul 
+    margin 0 auto
+    list-style none
+    width 50%
+    li 
+      font-size $p-size
+      padding 5px 0
+  p 
+    text-align center
+    color alpha($text-dark, 0.3)
+  span 
+    position relative
+    display inline-block
+    width 18px
+    height 18px
+    margin 0 2px
+    i 
+      position absolute
+      top 4px
+      left 0
+      font-size 18px
+      color #FF82A2
     
 @media (min-width 400px)
   // css

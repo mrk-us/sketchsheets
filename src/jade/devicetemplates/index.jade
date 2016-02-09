@@ -14,6 +14,7 @@ html
     link(rel='stylesheet', href='../css/style.css')
     link(rel='stylesheet', href='../css/fluidbox.css')
     link(rel='stylesheet', href='../css/swiper.min.css')
+    link(rel='stylesheet', href='../css/hint.min.css')
   body        
     .wrap
       nav
@@ -26,7 +27,8 @@ html
               li
                 a.active(href='/devicetemplates') Device Templates
               li
-                span Icon Templates
+                span.hint--top.hint--rounded.hint--bounce(data-hint='Coming soon') 
+                  | Icon Templates
       section
         .row.hero
           .column

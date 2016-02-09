@@ -75,6 +75,7 @@ unset($_POST);
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/fluidbox.css">
     <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/hint.min.css">
   </head>
   <body>       
     <div class="wrap">
@@ -86,7 +87,9 @@ unset($_POST);
           <div class="column eight">
             <ul>
               <li><a href="/devicetemplates" class="active">Device Templates</a></li>
-              <li><span>Icon Templates</span></li>
+              <li><span data-hint="Coming soon" class="hint--top hint--rounded hint--bounce">
+                   
+                  Icon Templates</span></li>
             </ul>
           </div>
         </div>
@@ -526,6 +529,44 @@ unset($_POST);
         </section>
       </div>
     </div>
+    <section class="footer">
+      <div class="wrap">
+        <div class="row footer-links">
+          <div class="column three top">
+            <h6>Templates</h6>
+            <ul> 
+              <li><a href="/devicetemplates">Device Templates</a></li>
+            </ul>
+          </div>
+          <div class="column three top">
+            <h6>Online</h6>
+            <ul>
+              <li><a href="https://github.com/rnarrkus/sketchsheets" target="_blank">Github</a></li>
+              <li><a href="http://twitter.com/sketchsheets" target="_blank">Twitter</a></li>
+            </ul>
+          </div>
+          <div class="column three top">
+            <h6>Terms</h6>
+            <ul>
+              <li><a href="/privacy">Privacy</a></li>
+              <li><a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></li>
+            </ul>
+          </div>
+          <div class="column three top">
+            <h6>Contact</h6>
+            <ul>
+              <li><a href="mailto:mail@sketchsheets.cc">Feedback</a></li>
+              <li><a href="mailto:ads@sketchsheets.cc">Advertising</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <p>Made with <span><i class="icon-heart"></i></span> by <a href="http://markwil.so" target="_blank">Mark Wilson</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.0.0/imagesloaded.pkgd.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
