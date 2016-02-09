@@ -1,53 +1,4 @@
-<?php
-$error = ""; // error holder
-if(isset($_POST['zipit']))
-  {
-    $post = $_POST; 
-    $file_folder = "sketchsheets/"; // Directory to load
-  
-    if(extension_loaded('zip'))
-      { 
-      // Checking ZIP extension is available
-      if(isset($post['files']) and count($post['files']) > 0)
-        { 
-          // Checking files are selected
-          $zip = new ZipArchive(); // Load zip library 
-          $zip_name = sketchsheets.".zip"; // Zip name
-
-          if($zip->open($zip_name, ZIPARCHIVE::CREATE)!==TRUE)
-            { 
-              // Opening zip file to load files
-              $error .= "* Sorry, there was a problem :(";
-            }
-
-          foreach($post['files'] as $file)
-            { 
-              $zip->addFile($file_folder.$file); // Adding files into zip
-            }
-
-          $zip->close();
-
-          if(file_exists($zip_name))
-            {
-              // push to download the zip
-              header('Content-type: application/zip');
-              header('Content-Disposition: attachment; filename="'.$zip_name.'"');
-              readfile($zip_name);
-              // remove zip file is exists in temp path
-              unlink($zip_name);
-              header('Location: .');
-            }
-  
-        }
-
-        else
-        $error .= "* Add something to collection first";
-      }
-    else
-    $error .= "* Sorry, there was a problem :(";
-  }
-unset($_POST);
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -73,38 +24,22 @@ unset($_POST);
     <meta property="og:description" content="Printable wireframe templates for designers">
     <meta name="twitter:description" content="Printable wireframe templates for designers">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fluidbox.css">
   </head>
   <body>       
     <div class="wrap">
       <nav>
         <div class="row">
-          <div class="column four">
+          <div class="column four bottom">
             <div class="logo"><a href="/"></a></div>
           </div>
           <div class="column eight">
             <ul>
               <li><a href="devicetemplates">Device Templates</a></li>
-              <li><a href="icontemplates">Icon Templates</a></li>
-              <li><a href="othertemplates">Other Templates</a></li>
+              <li><span>Icon Templates</span></li>
             </ul>
           </div>
         </div>
       </nav>
-      <section>
-        <div class="row hero">
-          <div class="column">
-            <h3>Free Printable Device Templates for Designers</h3><a href=""><i class="icon-twitter"></i></a>
-          </div>
-        </div>
-      </section>
     </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.0.0/imagesloaded.pkgd.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
-    <script src="../js/isotope.pkgd.min.js"></script>
-    <script src="../js/jquery.fluidbox.min.js"></script>
-    <script src="../js/classie.js"></script>
-    <script src="../js/scripts.js"></script>
   </body>
 </html>

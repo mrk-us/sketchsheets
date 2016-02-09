@@ -74,19 +74,19 @@ unset($_POST);
     <meta name="twitter:description" content="Printable wireframe templates for designers">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/fluidbox.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
   </head>
   <body>       
     <div class="wrap">
       <nav>
         <div class="row">
-          <div class="column four">
+          <div class="column four bottom">
             <div class="logo"><a href="/"></a></div>
           </div>
           <div class="column eight">
             <ul>
               <li><a href="/devicetemplates" class="active">Device Templates</a></li>
-              <li><a href="../icontemplates">Icon Templates</a></li>
-              <li><a href="../othertemplates">Other Templates</a></li>
+              <li><span>Icon Templates</span></li>
             </ul>
           </div>
         </div>
@@ -94,7 +94,32 @@ unset($_POST);
       <section>
         <div class="row hero">
           <div class="column">
-            <h3>Free Printable Device Templates for Designers</h3><a href=""><i class="icon-twitter"></i></a>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="">
+                    <div class="row">
+                      <div class="column twelve">
+                        <h1>Printable device templates for designers</h1>
+                        <p> <i class="icon-twitter"></i></p>
+                      </div>
+                    </div></a></div>
+                <div class="swiper-slide"><a href="">
+                    <div class="row">
+                      <div class="column twelve">
+                        <h1>Create your own template</h1>
+                        <p>Download the .sketch</p>
+                      </div>
+                    </div></a></div>
+                <div class="swiper-slide"><a href="">
+                    <div class="row">
+                      <div class="column twelve">
+                        <h1>Advertise here</h1>
+                        <p>Contact ads@sketchsheets.cc</p>
+                      </div>
+                    </div></a></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -103,7 +128,8 @@ unset($_POST);
           <div class="row sidebar">
             <div class="column twelve">
               <div class="download-collection">
-                <button class="disabled download-collection-button"><span class="button-label disabled">Download</span>
+                <button class="disabled download-collection-button">
+                  <div class="button-label disabled">Download Collection</div>
                   <div class="collection-total"><span class="collection-total-count">0</span></div>
                 </button>
               </div>
@@ -416,79 +442,79 @@ unset($_POST);
                   <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone6Plus/Landscape/iPhone6Plus-Landscape-Scrolled-x2/Blank/iPhone6Plus-Landscape-Scrolled-x2.png" class="lightbox"><img src="../sketchsheets/iPhone6Plus/Landscape/iPhone6Plus-Landscape-Scrolled-x2/Blank/iPhone6Plus-Landscape-Scrolled-x2.png"></a><a href="" class="downloadzip"> <span>Download</span></a>
                 </div>
               </div>
-              <div class="column item ipad portrait">
+              <div class="column item ipad portrait standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
                   <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Portrait/iPad-Portrait-x1/Blank/iPad-Portrait-x1.png" class="lightbox"><img src="../sketchsheets/iPad/Portrait/iPad-Portrait-x1/Blank/iPad-Portrait-x1.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
-              <div class="column item ipad portrait">
+              <div class="column item ipad portrait standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
                   <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Portrait/iPad-Portrait-Multitask-x1/Blank/iPad-Portrait-Multitask-x1.png" class="lightbox"><img src="../sketchsheets/iPad/Portrait/iPad-Portrait-Multitask-x1/Blank/iPad-Portrait-Multitask-x1.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
-              <div class="column item ipad portrait">
+              <div class="column item ipad portrait standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
                   <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Portrait/iPad-Portrait-x2/Blank/iPad-Portrait-x2.png" class="lightbox"><img src="../sketchsheets/iPad/Portrait/iPad-Portrait-x2/Blank/iPad-Portrait-x2.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
-              <div class="column item ipad portrait">
+              <div class="column item ipad portrait standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
                   <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Portrait/iPad-Portrait-x1-Multitask-x1/Blank/iPad-Portrait-x1-Multitask-x1.png" class="lightbox"><img src="../sketchsheets/iPad/Portrait/iPad-Portrait-x1-Multitask-x1/Blank/iPad-Portrait-x1-Multitask-x1.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
-              <div class="column item ipad portrait">
+              <div class="column item ipad portrait standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
                   <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Portrait/iPad-Portrait-Multitask-x2/Blank/iPad-Portrait-Multitask-x2.png" class="lightbox"><img src="../sketchsheets/iPad/Portrait/iPad-Portrait-Multitask-x2/Blank/iPad-Portrait-Multitask-x2.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
-              <div class="column item ipad landscape">
+              <div class="column item ipad landscape standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
                   <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Landscape/iPad-Landscape-x1/Blank/iPad-Landscape-x1.png" class="lightbox"><img src="../sketchsheets/iPad/Landscape/iPad-Landscape-x1/Blank/iPad-Landscape-x1.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
-              <div class="column item ipad landscape">
+              <div class="column item ipad landscape standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
                   <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Landscape/iPad-Landscape-Multitask-x1-A/Blank/iPad-Landscape-Multitask-x1-A.png" class="lightbox"><img src="../sketchsheets/iPad/Landscape/iPad-Landscape-Multitask-x1-A/Blank/iPad-Landscape-Multitask-x1-A.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
-              <div class="column item ipad landscape">
+              <div class="column item ipad landscape standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
                   <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Landscape/iPad-Landscape-Multitask-x1-B/Blank/iPad-Landscape-Multitask-x1-B.png" class="lightbox"><img src="../sketchsheets/iPad/Landscape/iPad-Landscape-Multitask-x1-B/Blank/iPad-Landscape-Multitask-x1-B.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
-              <div class="column item ipad landscape">
+              <div class="column item ipad landscape standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
                   <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Landscape/iPad-Landscape-x2/Blank/iPad-Landscape-x2.png" class="lightbox"><img src="../sketchsheets/iPad/Landscape/iPad-Landscape-x2/Blank/iPad-Landscape-x2.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
-              <div class="column item ipad landscape">
+              <div class="column item ipad landscape standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
                   <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Landscape/iPad-Landscape-x1-Multitask-x1-A/Blank/iPad-Landscape-x1-Multitask-x1-A.png" class="lightbox"><img src="../sketchsheets/iPad/Landscape/iPad-Landscape-x1-Multitask-x1-A/Blank/iPad-Landscape-x1-Multitask-x1-A.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
-              <div class="column item ipad landscape">
+              <div class="column item ipad landscape standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
                   <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Landscape/iPad-Landscape-x1-Multitask-x1-B/Blank/iPad-Landscape-x1-Multitask-x1-B.png" class="lightbox"><img src="../sketchsheets/iPad/Landscape/iPad-Landscape-x1-Multitask-x1-B/Blank/iPad-Landscape-x1-Multitask-x1-B.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
-              <div class="column item ipad landscape">
+              <div class="column item ipad landscape standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
                   <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Landscape/iPad-Landscape-Multitask-x2-A/Blank/iPad-Landscape-Multitask-x2-A.png" class="lightbox"><img src="../sketchsheets/iPad/Landscape/iPad-Landscape-Multitask-x2-A/Blank/iPad-Landscape-Multitask-x2-A.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
                 </div>
               </div>
-              <div class="column item ipad landscape">
+              <div class="column item ipad landscape standard">
                 <div class="card">
                   <input type="checkbox" name="files[]" value="iPad/">
                   <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPad/Landscape/iPad-Landscape-Multitask-x2-B/Blank/iPad-Landscape-Multitask-x2-B.png" class="lightbox"><img src="../sketchsheets/iPad/Landscape/iPad-Landscape-Multitask-x2-B/Blank/iPad-Landscape-Multitask-x2-B.png"></a><a href="" class="downloadzip"> <span>Download </span></a>
@@ -504,6 +530,7 @@ unset($_POST);
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.0.0/imagesloaded.pkgd.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
     <script src="../js/isotope.pkgd.min.js"></script>
+    <script src="../js/swiper.jquery.min.js"></script>
     <script src="../js/jquery.fluidbox.min.js"></script>
     <script src="../js/classie.js"></script>
     <script src="../js/scripts.js"></script>

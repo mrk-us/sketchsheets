@@ -1,5 +1,4 @@
 //- index.jade
-include includes/zip.php
 doctype html
 html
   head
@@ -12,12 +11,11 @@ html
     meta(property='og:description', content='Printable wireframe templates for designers')
     meta(name='twitter:description', content='Printable wireframe templates for designers')
     link(rel='stylesheet', href='css/style.css')
-    link(rel='stylesheet', href='css/fluidbox.css')
   body        
     .wrap
       nav
         .row
-          .column.four
+          .column.four.bottom
             .logo
               a(href='/')
           .column.eight
@@ -25,20 +23,4 @@ html
               li
                 a(href='devicetemplates') Device Templates
               li
-                a(href='icontemplates') Icon Templates
-              li
-                a(href='othertemplates') Other Templates
-      section
-        .row.hero
-          .column
-            h3 Free Printable Device Templates for Designers
-            a(href='')
-              i.icon-twitter
-  
-    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.0.0/imagesloaded.pkgd.min.js')
-    script(src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js')
-    script(src='../js/isotope.pkgd.min.js')
-    script(src='../js/jquery.fluidbox.min.js')
-    script(src='../js/classie.js')
-    script(src='../js/scripts.js')
+                span Icon Templates
