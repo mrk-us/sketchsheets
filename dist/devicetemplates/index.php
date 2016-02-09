@@ -546,9 +546,9 @@ unset($_POST);
             </ul>
           </div>
           <div class="column three top">
-            <h6>Terms</h6>
+            <h6>License</h6>
             <ul>
-              <li><a href="/privacy">Privacy</a></li>
+              <li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC ANS 4.0</a></li>
               <li><a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></li>
             </ul>
           </div>

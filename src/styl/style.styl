@@ -194,15 +194,19 @@ button.download-collection-button
           color $purple
   > .button-label
     position relative
+    width 67%
     text-align right
     padding-right 20px
-    width 80%
+    @media (min-width 600px)
+      width 80%
     float left
     color $purple
   > .collection-total
-    width 20%
-    position relative
+    width 33%
+    @media (min-width 600px)
+      width 20%
     float left
+    position relative
     margin-top -1px
     > span.collection-total-count
       display block
@@ -389,6 +393,9 @@ button.download-collection-button
       left 0
       font-size 18px
       color #FF82A2
+      
+article
+  margin 200px 0
     
 @media (min-width 400px)
   // css
@@ -398,6 +405,7 @@ button.download-collection-button
     > aside.column.column.aside-left
       width 260px
       margin-right 25px
+      margin-bottom 200px
     > section.column.column.aside-right
       width calc(100% - 300px)
       margin-right 15px
