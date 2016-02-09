@@ -135,6 +135,7 @@ gulp.task('stylus', function() {
 gulp.task('js', function() {
   return gulp.src(config.js.src)
     .pipe(plumber())
+    .pipe(uglify())
     .pipe(gulp.dest(config.js.destination));
 });
 
