@@ -1,53 +1,4 @@
-<?php
-$error = ""; // error holder
-if(isset($_POST['zipit']))
-  {
-    $post = $_POST; 
-    $file_folder = "sketchsheets/"; // Directory to load
-  
-    if(extension_loaded('zip'))
-      { 
-      // Checking ZIP extension is available
-      if(isset($post['files']) and count($post['files']) > 0)
-        { 
-          // Checking files are selected
-          $zip = new ZipArchive(); // Load zip library 
-          $zip_name = sketchsheets.".zip"; // Zip name
-
-          if($zip->open($zip_name, ZIPARCHIVE::CREATE)!==TRUE)
-            { 
-              // Opening zip file to load files
-              $error .= "* Sorry, there was a problem :(";
-            }
-
-          foreach($post['files'] as $file)
-            { 
-              $zip->addFile($file_folder.$file); // Adding files into zip
-            }
-
-          $zip->close();
-
-          if(file_exists($zip_name))
-            {
-              // push to download the zip
-              header('Content-type: application/zip');
-              header('Content-Disposition: attachment; filename="'.$zip_name.'"');
-              readfile($zip_name);
-              // remove zip file is exists in temp path
-              unlink($zip_name);
-              header('Location: .');
-            }
-  
-        }
-
-        else
-        $error .= "* Add something to collection first";
-      }
-    else
-    $error .= "* Sorry, there was a problem :(";
-  }
-unset($_POST);
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -135,6 +86,7 @@ unset($_POST);
                   <div class="button-label">Download Collection</div>
                   <div class="collection-total"><span class="collection-total-count">0</span></div>
                 </button>
+                <button class="clear-collection">Clear collection</button>
               </div>
             </div>
             <div class="column twelve">
@@ -173,11 +125,11 @@ unset($_POST);
           </div>
         </aside>
         <section class="column aside-right top nest">
-          <form name="zips" method="post">
+          <form name="zips" method="post" action="../zip.php">
             <div class="row justify grid">
               <div class="column item iphone5 portrait standard">
                 <div class="card">
-                  <input type="checkbox" name="files[]" value="iPhone5/">
+                  <input type="checkbox" name="files[]" value="iPhone5/Portrait/iPhone5-Portrait-Standard-x2/Blank/iPhone5-Portrait-Standard-x2.png">
                   <div class="overlay"><span>Added to collection</span></div><span><i class="icon-plus"></i><i class="icon-check"></i></span><a href="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x2/Blank/iPhone5-Portrait-Standard-x2.png" class="lightbox"><img src="../sketchsheets/iPhone5/Portrait/iPhone5-Portrait-Standard-x2/Blank/iPhone5-Portrait-Standard-x2.png"></a><a href="" class="downloadzip"> <span>Download                  </span></a>
                 </div>
               </div>
@@ -572,6 +524,7 @@ unset($_POST);
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
     <script src="../js/isotope.pkgd.min.js"></script>
     <script src="../js/swiper.jquery.min.js"></script>
+    <script src="../js/sticky-kit.min.js"></script>
     <script src="../js/jquery.fluidbox.min.js"></script>
     <script src="../js/classie.js"></script>
     <script src="../js/scripts.js"></script>

@@ -1,5 +1,4 @@
 //- index.jade
-include ../includes/zip.php
 doctype html
 html
   head
@@ -66,6 +65,8 @@ html
                   .collection-total
                     span.collection-total-count
                       | 0
+                button.clear-collection
+                  | Clear collection
             .column.twelve
               .filter
                 .filter-list(data-filter-group='device')
@@ -94,7 +95,7 @@ html
                   button.button(data-filter='.scrolled') Scrolled
                   button.button(data-filter='.standard-scrolled') Both
         section.column.aside-right.top.nest
-          form(name='zips' method='post')
+          form(name='zips' method='post' action='../zip.php')
             .row.justify.grid
               include ../includes/iphone5.jade
               include ../includes/iphone6.jade

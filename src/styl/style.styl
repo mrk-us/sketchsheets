@@ -154,7 +154,6 @@ nav
     > aside.column.column.aside-left
       width 260px
       margin-right 25px
-      margin-bottom 200px
     > section.column.column.aside-right
       width calc(100% - 300px)
       margin-right 15px
@@ -192,59 +191,65 @@ button
   cursor pointer
 
     
-button.download-collection-button
-  &.disabled
-    cursor not-allowed
-    border 1px solid $lightest
-    > .button-label
-      color $light
+.download-collection
+  button.download-collection-button
+    &.disabled
+      cursor not-allowed
+      border 1px solid $lightest
+      > .button-label
+        color $light
+      &:hover
+        opacity 1
+    border 1px solid $purple
+    padding 22px 0
+    margin-bottom 10px
+    text-align center
+    position relative
     &:hover
-      opacity 1
-  border 1px solid $purple
-  padding 22px 0
-  margin-bottom 40px
-  text-align center
-  position relative
-  &:hover
-    opacity 0.8
-  > .button-label
-    position relative
-    width 67%
-    text-align right
-    padding-right 20px
-    @media (min-width 600px)
-      width 80%
-    float left
-    color $purple
-  > .collection-total
-    width 33%
-    @media (min-width 600px)
-      width 20%
-    float left
-    position relative
-    margin-top -1px
-    i 
-      display block
-      font-size 20px
-      color #C4C8CB
-    > span.collection-total-count
-      display block
-      padding-right 1px
-      position absolute
-      border 1px solid $lighter
-      color $lighter
-      border-radius: 4px
-      width 18px
-      height 18px
-      font-size 10px
-      text-align center
-      font-weight 500
-      line-height 16px
-      transition 300ms
-      -webkit-transition 300ms
-      &.color
-        border 1px solid $purple !important
-        color $purple !important
+      opacity 0.8
+    > .button-label
+      position relative
+      width 67%
+      text-align right
+      padding-right 20px
+      @media (min-width 600px)
+        width 80%
+      float left
+      color $purple
+    > .collection-total
+      width 33%
+      @media (min-width 600px)
+        width 20%
+      float left
+      position relative
+      margin-top -1px
+      i 
+        display block
+        font-size 20px
+        color #C4C8CB
+      > span.collection-total-count
+        display block
+        padding-right 1px
+        position absolute
+        border 1px solid $lighter
+        color $lighter
+        border-radius: 4px
+        width 18px
+        height 18px
+        font-size 10px
+        text-align center
+        font-weight 500
+        line-height 16px
+        transition 300ms
+        -webkit-transition 300ms
+        &.color
+          border 1px solid $purple !important
+          color $purple !important
+  button.clear-collection
+    margin-bottom 20px
+    color $lighter
+    &:hover
+      color $purple
 
 .countAnim 
   -webkit-animation countAnim 350ms forwards
@@ -268,9 +273,6 @@ button.download-collection-button
     
     
 //\\//\\//\\//\\//\\//\\//\\//\\//\\ Grid
-.grid
-  margin-bottom 200px
-  
 .row
   > .column.column.item
     width 100%
@@ -390,6 +392,7 @@ button.download-collection-button
 //\\//\\//\\//\\//\\//\\//\\//\\//\\ Footer
     
 .footer
+  margin-top 200px
   background #FAFBFC
   .footer-links
     padding 250px 0
