@@ -1,15 +1,39 @@
-$(function () {
+$(document).ready( function() {
+  // init Fluidbox
   $('a.lightbox').fluidbox({
     loader: true
   });
-});
-var swiper = new Swiper('.swiper-container', {
-  pagination: '.swiper-pagination',
-  paginationClickable: true,
-  autoplay: 7500,
-  autoplayDisableOnInteraction: false
-});
-$(document).ready( function() {
+  
+  // init swiper
+  var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    autoplay: 7500,
+    autoplayDisableOnInteraction: false
+  });
+  
+  // init sticky-kit on desktop
+  if ($(window).width() > 600) {
+    $('.aside-left').stick_in_parent({
+      offset_top: 30
+    });
+  }
+  else {
+    $('.aside-left').trigger("sticky_kit:detach");
+  }
+  
+  // watch for resize
+  $(window).resize(function() {
+    if ($(window).width() > 600) {
+      $('.aside-left').stick_in_parent({
+        offset_top: 30
+      });
+    }
+    else {
+      $('.aside-left').trigger("sticky_kit:detach");
+    }
+  });
+  
   // init Isotope
   var $grid = $('.grid').imagesLoaded( function() {
     $grid.isotope({
@@ -45,7 +69,8 @@ $(document).ready( function() {
   // Total in collection
   var checkbox = $('input[name="files[]"]'),
       label = document.querySelector('.collection-total-count'),
-      downloadCollection = document.querySelector('.download-collection-button');
+      downloadCollection = document.querySelector('.download-collection-button'),
+      clearCollection = document.querySelector('.clear-collection');
 
   checkbox.change(function() {
     var total= $('input[name="files[]"]:checked').length;
@@ -69,6 +94,9 @@ $(document).ready( function() {
       { classie.remove(label, 'color');
         classie.add(downloadCollection, 'disabled');
       }
+    $(clearCollection).on('click', function () {
+      $('input[name="files[]"]:checked').trigger("click");
+    });
     // Add count animation
     classie.add(label, 'countAnim');
     // Remove count animation
