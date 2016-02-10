@@ -44,6 +44,10 @@ var config = {
     src: './src/img/**',
     destination: 'dist/img'
   },
+  fav: {
+    src: './src/favicons/**',
+    destination: 'dist/'
+  },
   sketchsheets: {
     src: './src/sketchsheets/**',
     destination: 'dist/sketchsheets'
@@ -126,6 +130,12 @@ gulp.task('img', function() {
     .pipe(image())
     .pipe(gulp.dest(config.img.destination));
 });
+gulp.task('fav', function() {
+  return gulp.src(config.fav.src)
+    .pipe(plumber())
+    .pipe(newer(config.fav.destination))
+    .pipe(gulp.dest(config.fav.destination));
+});
 gulp.task('sketchsheets', function() {
   return gulp.src(config.sketchsheets.src)
     .pipe(plumber())
@@ -147,6 +157,6 @@ gulp.task('watch', function() {
 });
 
 // Command line tasks
-gulp.task('build', ['index', 'devicetemplates', 'zip', 'stylus', 'js', 'img', 'sketchsheets', 'fonts']);
+gulp.task('build', ['index', 'devicetemplates', 'zip', 'stylus', 'js', 'img', 'fav', 'sketchsheets', 'fonts']);
 gulp.task('w', ['build', 'watch']);
 gulp.task('default', ['build', 'webserver', 'watch', 'openbrowser']);
