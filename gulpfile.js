@@ -28,13 +28,9 @@ var config = {
     src: './src/jade/devicetemplates/index.jade',
     destination: 'dist/devicetemplates'
   },
-  icontemplates: {
-    src: './src/jade/icontemplates/index.jade',
-    destination: 'dist/icontemplates'
-  },
-  othertemplates: {
-    src: './src/jade/othertemplates/index.jade',
-    destination: 'dist/othertemplates'
+  zip: {
+    src: './src/jade/includes/zip.php',
+    destination: 'dist/'
   },
   css: {
     src: './src/styl/app.styl',
@@ -83,7 +79,7 @@ gulp.task('index', function() {
       pretty: true,
       locals: locs 
     }))
-    .pipe(rename('index.php'))
+    .pipe(rename('index.html'))
     .pipe(gulp.dest(config.index.destination));
 });
 gulp.task('devicetemplates', function() {
@@ -94,30 +90,13 @@ gulp.task('devicetemplates', function() {
       pretty: true,
       locals: locs 
     }))
-    .pipe(rename('index.php'))
+    .pipe(rename('index.html'))
     .pipe(gulp.dest(config.devicetemplates.destination));
 });
-gulp.task('icontemplates', function() {
+gulp.task('zip', function() {
   var locs = {};
-  return gulp.src(config.icontemplates.src)
-    .pipe(plumber())
-    .pipe(jade({ 
-      pretty: true,
-      locals: locs 
-    }))
-    .pipe(rename('index.php'))
-    .pipe(gulp.dest(config.icontemplates.destination));
-});
-gulp.task('othertemplates', function() {
-  var locs = {};
-  return gulp.src(config.othertemplates.src)
-    .pipe(plumber())
-    .pipe(jade({ 
-      pretty: true,
-      locals: locs 
-    }))
-    .pipe(rename('index.php'))
-    .pipe(gulp.dest(config.othertemplates.destination));
+  return gulp.src(config.zip.src) 
+    .pipe(gulp.dest(config.zip.destination));
 });
 
 // Stylus w/ option to rename file
@@ -168,6 +147,6 @@ gulp.task('watch', function() {
 });
 
 // Command line tasks
-gulp.task('build', ['index', 'devicetemplates', 'icontemplates', 'othertemplates', 'stylus', 'js', 'img', 'sketchsheets', 'fonts']);
+gulp.task('build', ['index', 'devicetemplates', 'zip', 'stylus', 'js', 'img', 'sketchsheets', 'fonts']);
 gulp.task('w', ['build', 'watch']);
 gulp.task('default', ['build', 'webserver', 'watch', 'openbrowser']);
