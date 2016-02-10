@@ -1,0 +1,15 @@
+//- includes/mixins.jade
+
+mixin sketchsheet(filters, dir)
+  .column.item(class='#{filters}')
+    .card
+      input(type='checkbox' name='files[]' value='#{dir}.zip')
+      .overlay
+        span Added to collection
+      span
+        i.icon-plus
+        i.icon-check
+      a(href='../sketchsheets/#{dir}/thumb.png' class='lightbox')
+        img(src='../sketchsheets/#{dir}/thumb.png' alt='#{filters}')
+      a(href='../sketchsheets/zips/#{dir}.zip' class='downloadzip') 
+        span Download 

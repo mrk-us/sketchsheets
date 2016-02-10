@@ -1,47 +1,55 @@
 <?php
-function zipFilesAndDownload($file_names,$archive_file_name,$file_path){
-	$zip = new ZipArchive();
-	//create the file and throw the error if unsuccessful
-	if ($zip->open($archive_file_name, ZIPARCHIVE::CREATE )!==TRUE) {
-    	exit("cannot open <$archive_file_name>\n");
-	}
-	//add each files of $file_name array to archive
-	foreach($file_names as $files)	{
-  		$zip->addFile($file_path.$files,$files);
-	}
-	$zip->close();
-$zipped_size = filesize($archive_file_name);
+if(isset($_POST['files']))
+{
+$error = ""; //error holder
+if(isset($_POST['zipit']))
+{
+$post = $_POST; 
+$file_folder = "sketchsheets/"; // folder to load files
+if(extension_loaded('zip'))
+{ 
+// Checking ZIP extension is available
+if(isset($post['files']) and count($post['files']) > 0)
+{ 
+// Checking files are selected
+$zip = new ZipArchive(); // Load zip library 
+$zip_name = sketchsheets.".zip"; // Zip name
+if($zip->open($zip_name, ZIPARCHIVE::CREATE)!==TRUE)
+{ 
+ // Opening zip file to load files
+$error .= "* Sorry ZIP creation failed at this time";
+}
+foreach($post['files'] as $file)
+{ 
+$zip->addFile($file_folder.$file); // Adding files into zip
+}
+$zip->close();
+if(file_exists($zip_name))
+{
+// push to download the zip
+$zipped_size = filesize($zip_name);
+header('Content-Type: application/zip');
+header('Content-Disposition: attachment; filename="'.$zip_name.'"');
 header("Content-Description: File Transfer");
-header("Content-type: application/zip"); 
+header("Content-Type: application/zip"); 
 header("Content-Type: application/force-download");// some browsers need this
-header("Content-Disposition: attachment; filename=$archive_file_name");
 header('Expires: 0');
 header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
-header('Pragma: public');
+header('Pragma: Public');
 header("Content-Length:". " $zipped_size");
 ob_clean();
 flush();
-readfile("$archive_file_name");
-unlink("$archive_file_name"); // Now delete the temp file (some servers need this option)
-    exit;	
-  }
-if(isset($_POST['zipit'])) {
-//$file_names=$_POST['items'];// Always sanitize your submitted data!!!!!!
-//$file_names = filter_var_array($_POST['items']);//works but it's the wrong method
-$filter = filter_input_array(INPUT_POST, FILTER_SANITIZE_SPECIAL_CHARS) ;
-$file_names = $filter['files'] ; 
-//Archive name
-$archive_file_name='sketchsheets.zip';
-//Download Files path
-$file_path= '../sketchsheets/';
-//cal the function
-zipFilesAndDownload($file_names,$archive_file_name,$file_path);
-} else {
-
-//header("Refresh: 5; url= ./index.php ");
-//print '<h1 style="text-align:center">You you shouldn\'t be here ......</pre>
-//<p style="color: red;"><strong>redirection in 5 seconds</strong></p>
-//<pre>';
-//exit;
+readfile($zip_name);
+// remove zip file is exists in temp path
+unlink($zip_name);
+}
+ 
+}
+else
+$error .= "* Please select file to zip ";
+}
+else
+$error .= "* You dont have ZIP extension";
+}
 }
 ?>
