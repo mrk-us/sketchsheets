@@ -1,6 +1,6 @@
 Sketchsheets
 ============
 
-Free [sketch sheets](http://sketchsheets.cc) for UI &amp; UX designers
+Free [sketch sheets](http://sketchsheets.com) for UI &amp; UX designers
 
-[sketchsheets.cc](http://sketchsheets.cc)
+[sketchsheets.cc](http://sketchsheets.com)
