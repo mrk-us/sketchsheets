@@ -76,9 +76,7 @@
         {
             $source_file_path = $source_parent_folder . $sub_file_path;
 
-            $internal_parent_1 = strtok($sub_file_path, '/');
-            $internal_parent_2 = strtok('/');
-            $output_internal_path = $internal_parent_1 . "/" . $internal_parent_2 . "/";
+            $output_internal_path = $source_file_path . "/";
             
             if (!file_exists($source_file_path))
             {
