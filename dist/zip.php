@@ -75,6 +75,10 @@
         foreach ($sub_file_paths as $sub_file_path)
         {
             $source_file_path = $source_parent_folder . $sub_file_path;
+
+            $internal_parent_1 = strtok($sub_file_path, '/');
+            $internal_parent_2 = strtok('/');
+            $output_internal_path = $internal_parent_1 . "/" . $internal_parent_2 . "/";
             
             if (!file_exists($source_file_path))
             {
@@ -92,24 +96,24 @@
                     $file = str_replace('\\', '/', $file);
 
                     // Don't include "." and ".." folders
-                    if( in_array(substr($file, strrpos($file, '/')+1), array('.', '..')) )
+                    if ( in_array(substr($file, strrpos($file, '/')+1), array('.', '..')) )
                         continue;
 
                     $file = realpath($file);
 
                     if (is_dir($file) === true)
                     {
-                        $zip->addEmptyDir(str_replace($source_file_path . '/', '', $file . '/'));
+                        $zip->addEmptyDir($output_internal_path . str_replace($source_file_path . '/', '', $file . '/'));
                     }
                     else if (is_file($file) === true)
                     {
-                        $zip->addFromString(str_replace($source_file_path . '/', '', $file), file_get_contents($file));
+                        $zip->addFromString($output_internal_path . str_replace($source_file_path . '/', '', $file), file_get_contents($file));
                     }
                 }
             }
             else if (is_file($source_file_path) === true)
             {
-                $zip->addFromString(basename($source_file_path), file_get_contents($source_file_path));
+                $zip->addFromString($output_internal_path . basename($source_file_path), file_get_contents($source_file_path));
             }
         }
         
