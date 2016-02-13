@@ -34,7 +34,7 @@ card()
   border 1px solid $lightest
   background #FFFFFF
   border-radius $border-radius
-  padding 60px 10px
+  padding 80px 10px
 
 stripes()
   background repeating-linear-gradient(
@@ -57,7 +57,7 @@ a
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\ Navigation
 nav
-  padding 50px 0 20px 0
+  padding 50px 0 0 0
   background $purple
   .wrap
     padding 0 15px
@@ -100,8 +100,17 @@ nav
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\ Hero      
 .hero
-  padding 10px 10px 50px 10px
+  padding 0 0 50px 0
+  @media (min-width 600px)
+    padding 0 0 70px 0
   background $purple
+  .title
+    text-align center
+    color #FFF
+    h1
+      font-weight 300
+      margin 60px 0
+      padding 0 20px
   a
     &:hover
       .hero-card
@@ -109,7 +118,7 @@ nav
     .hero-card
       padding 40px 20px
       border-radius $border-radius
-      border 1px solid alpha(#FFF, 0.75)
+      border 1px solid alpha(#FFF, 0.5)
       text-align center
       h3
         color #FFF
@@ -122,6 +131,8 @@ nav
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\ Sidebar 
 .row
+  > aside.column.column.aside-left
+    margin-top 30px
   > section.column.column.aside-right
     margin-top 30px
 
@@ -130,11 +141,11 @@ nav
     > aside.column.column.aside-left
       width 260px
       margin-right 25px
-      margin-top 40px
+      margin-top 60px
     > section.column.column.aside-right
       width calc(100% - 300px)
       margin-right 15px
-      margin-top 40px
+      margin-top 60px
       
 .sidebar
   .filter
@@ -174,7 +185,7 @@ button
       cursor not-allowed
       border 1px solid $lightest
       > .button-label
-        color $light
+        color $lighter
       &:hover
         opacity 1
     border 1px solid $purple
@@ -183,7 +194,9 @@ button
     text-align center
     position relative
     &:hover
-      opacity 0.8
+      > .button-label
+      .collection-total
+        opacity 0.8
     > .button-label
       position relative
       width 67%
@@ -225,7 +238,7 @@ button
     margin-bottom 20px
     color $lighter
     &:hover
-      color #FF82A2
+      color $light
 
 .countAnim 
   -webkit-animation countAnim 350ms forwards
@@ -254,11 +267,12 @@ button
     width 100%
     > .card
       card()
+      text-align center
       a.lightbox
         &:hover
           cursor zoom-in
       img
-        width 100%
+        width 90%
       &.border
         border 1px solid $purple !important 
       > .overlay
