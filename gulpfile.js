@@ -32,8 +32,12 @@ var config = {
     src: './src/jade/includes/zip.php',
     destination: 'dist/'
   },
-  css: {
+  stylus: {
     src: './src/styl/app.styl',
+    destination: 'dist/css'
+  },
+  css: {
+    src: './src/css/**',
     destination: 'dist/css'
   },
   js: {
@@ -74,7 +78,7 @@ gulp.task('openbrowser', function() {
   opn('http://'+ config.server.host +':'+ config.server.port + config.server.path);
 });
 
-// Jade w/ option to rename file
+// Jade 
 gulp.task('index', function() {
   var locs = {};
   return gulp.src(config.index.src)
@@ -103,14 +107,19 @@ gulp.task('zip', function() {
     .pipe(gulp.dest(config.zip.destination));
 });
 
-// Stylus w/ option to rename file
+// Stylus and CSS
 gulp.task('stylus', function() {
-  return gulp.src(config.css.src)
+  return gulp.src(config.stylus.src)
     .pipe(plumber())
     .pipe(stylus({
       compress: true
     }))
     .pipe(rename('style.css'))
+    .pipe(gulp.dest(config.stylus.destination));
+});
+gulp.task('css', function() {
+  return gulp.src(config.css.src)
+    .pipe(plumber())
     .pipe(gulp.dest(config.css.destination));
 });
 
@@ -140,6 +149,7 @@ gulp.task('sketchsheets', function() {
   return gulp.src(config.sketchsheets.src)
     .pipe(plumber())
     .pipe(newer(config.sketchsheets.destination))
+    .pipe(image())
     .pipe(gulp.dest(config.sketchsheets.destination));
 });
 
@@ -157,6 +167,6 @@ gulp.task('watch', function() {
 });
 
 // Command line tasks
-gulp.task('build', ['index', 'devicetemplates', 'zip', 'stylus', 'js', 'img', 'fav', 'sketchsheets', 'fonts']);
+gulp.task('build', ['index', 'devicetemplates', 'zip', 'stylus', 'css', 'js', 'img', 'fav', 'sketchsheets', 'fonts']);
 gulp.task('w', ['build', 'watch']);
 gulp.task('default', ['build', 'webserver', 'watch', 'openbrowser']);
