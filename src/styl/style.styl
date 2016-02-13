@@ -35,16 +35,8 @@ card()
   background #FFFFFF
   border-radius $border-radius
   padding 60px 10px
-  
-slide1()
-  background url(../img/hero3.png) center center no-repeat
-  background-size cover 105%
-  
-slide2()
-  background url(../img/hero2.png) center center no-repeat
-  background-size cover 105%
-  
-slide3()
+
+stripes()
   background repeating-linear-gradient(
   45deg,
   #fff,
@@ -65,8 +57,10 @@ a
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\ Navigation
 nav
-  margin 40px 0 30px 0
-  padding 0 15px
+  padding 50px 0 20px 0
+  background $purple
+  .wrap
+    padding 0 15px
   ul
     text-align center
     list-style none
@@ -78,6 +72,7 @@ nav
       display inline-block
       padding 0 10px
       font-size 14px
+      font-weight 300
       &:first-of-type
         padding-left 0
       &:last-of-type
@@ -85,12 +80,12 @@ nav
       @media (min-width 900px)
         padding 0 20px
       > a.active
-        color $purple
+        color #FFF
       span 
-        color $light
+        color alpha(#fff, 0.25)
         cursor not-allowed
   .logo
-    background url(../img/logo.svg) no-repeat
+    background url(../img/logo-white.svg) no-repeat
     background-size contain
     height 22px
     width 130px
@@ -105,43 +100,24 @@ nav
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\ Hero      
 .hero
-  margin 0 10px 50px 10px
-  position relative
-  .swiper-container
-    border-radius 8px
-    overflow hidden
-    .swiper-wrapper
-      width 100%
-      height 300px
-      .swiper-slide
-        width 100%
-        height 100%
-        &:nth-of-type(1)
-          slide1()
-          a
-            color #FFFFFF
-          p 
-            opacity 0.25
-        &:nth-of-type(2)
-          slide2()
-          a
-            color #FFFFFF
-          p 
-            opacity 0.5
-        &:nth-of-type(3)
-          slide3()
-          a
-            color $dark
-          p 
-            opacity 0.3
-        .row
-          height 100%
-          .column
-            text-align center
-            p i 
-              font-size 28px
-            p, h1
-              margin 0.75em 0
+  padding 10px 10px 50px 10px
+  background $purple
+  a
+    &:hover
+      .hero-card
+        border 1px solid alpha(#FFF, 1)
+    .hero-card
+      padding 40px 20px
+      border-radius $border-radius
+      border 1px solid alpha(#FFF, 0.75)
+      text-align center
+      h3
+        color #FFF
+        margin 0
+        font-weight 300
+      p 
+        color alpha(#FFF, 0.25)
+        margin 5px 0 0 0
               
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\ Sidebar 
@@ -154,10 +130,11 @@ nav
     > aside.column.column.aside-left
       width 260px
       margin-right 25px
+      margin-top 40px
     > section.column.column.aside-right
       width calc(100% - 300px)
       margin-right 15px
-      margin-top 0
+      margin-top 40px
       
 .sidebar
   .filter

@@ -14,8 +14,8 @@ html
     link(rel='stylesheet', href='../css/fluidbox.css')
     link(rel='stylesheet', href='../css/hint.min.css')
   body        
-    .wrap
-      nav
+    nav
+      .wrap
         .row
           .column.four.bottom
             .logo
@@ -27,10 +27,20 @@ html
               li
                 span.hint--top.hint--rounded.hint--bounce(data-hint='Coming soon') 
                   | Icon Templates
-      section
-        .row.hero
-          .column
-        
+    section.hero
+      .wrap
+        .row
+          .column.six
+            a(href='')
+              .hero-card
+                h3 Create your own
+                p Download the .sketch
+          .column.six
+            a(href='')
+              .hero-card
+                h3 Advertise here
+                p Contact ads@sketchsheets.com
+    .wrap
       .row
         aside.column.aside-left.top.nest
           .row.sidebar
