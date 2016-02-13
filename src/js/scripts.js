@@ -4,36 +4,6 @@ $(document).ready( function() {
     loader: true
   });
   
-  // init swiper
-  var swiper = new Swiper('.swiper-container', {
-    pagination: '.swiper-pagination',
-    paginationClickable: true,
-    autoplay: 7500,
-    autoplayDisableOnInteraction: false
-  });
-  
-  // init sticky-kit on desktop
-  if ($(window).width() > 600) {
-    $('.aside-left').stick_in_parent({
-      offset_top: 30
-    });
-  }
-  else {
-    $('.aside-left').trigger("sticky_kit:detach");
-  }
-  
-  // watch for resize
-  $(window).resize(function() {
-    if ($(window).width() > 600) {
-      $('.aside-left').stick_in_parent({
-        offset_top: 30
-      });
-    }
-    else {
-      $('.aside-left').trigger("sticky_kit:detach");
-    }
-  });
-  
   // init Isotope
   var $grid = $('.grid').imagesLoaded( function() {
     $grid.isotope({
@@ -86,7 +56,9 @@ $(document).ready( function() {
       { classie.add(label, 'color');
         classie.remove(downloadCollection, 'disabled');
         $(downloadCollection).on('click', function () {
-          $('input[name="zipit"]').trigger("click");
+          setTimeout(function() {
+            $('input[name="zipit"]').trigger("click");
+          }, 500);
         });
       }
     // Remove red bg color if 0
@@ -103,6 +75,13 @@ $(document).ready( function() {
     setTimeout(function() {
       classie.remove(label, 'countAnim');
     }, 350);
+  });
+  $('a.downloadzip').on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this); //Assigned a reference
+    setTimeout(function() {
+      window.location = $this.attr('href'); 
+    }, 500);
   });
   
   // flatten object by concatting values
