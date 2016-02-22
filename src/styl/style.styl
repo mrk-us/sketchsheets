@@ -78,7 +78,7 @@ button
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\ Hero      
 .hero
-  padding 100px 0 60px 0
+  padding 100px 0 50px 0
   a 
     float left
     .logo
@@ -145,9 +145,6 @@ button
     > .card
       card()
       text-align center
-      a.lightbox
-        &:hover
-          cursor zoom-in
       img
         width 90%
       &.border
@@ -223,18 +220,17 @@ button
       > .downloadzip
         position absolute
         color $purple
-        padding 30px 0
-        bottom 0
+        bottom 30px
         left 0
         right 0
+        margin auto
         text-align center
         font-size 14px
         font-weight 400
-        &:hover
-          color alpha($purple, 0.8)
-        > span
-          display inline-block
-          margin auto
+        span
+          &:hover
+            color alpha($purple, 0.8)
+            cursor pointer
           
 .end 
   text-align center
@@ -298,6 +294,12 @@ button
     text-align center
     font-weight 400
     color $paragraph
+    a 
+      color $paragraph
+      border-bottom 1px solid $line
+      &:hover
+        color $purple
+        border-bottom 1px solid $purple
   span 
     position relative
     display inline-block
@@ -309,7 +311,6 @@ button
       top 6px
       left 0
       font-size 16px
-      color #FF82A2
       
   
 //\\//\\//\\//\\//\\//\\//\\//\\//\\ Download Collection
@@ -330,17 +331,21 @@ button
     color #fff
     background $purple
     border-radius $border-radius + 4px
-    box-shadow  0px 20px 40px -20px rgba(0,0,0,0.8)
+    transform scale(0.96)
     transition 150ms
     overflow hidden
-    &:hover
-      transform scale(1.025)
-      box-shadow  0px 20px 45px -20px rgba(0,0,0,0.7)
+    &.shadow
+      transform scale(1)
+      box-shadow  0px 20px 40px -20px rgba(0,0,0,0.8)
+      &:hover
+        transform scale(1.025)
+        box-shadow  0px 20px 45px -20px rgba(0,0,0,0.7)
     div
       float left
     .button-label
       width 70%
       text-align right
+      font-size 13px
     .collection-total
       width 30%
       position relative
@@ -376,3 +381,35 @@ button
     opacity 1
     -webkit-transform translate3d(0, 0, 0)
     transform translate3d(0, 0, 0)
+    
+//\\//\\//\\//\\//\\//\\//\\//\\//\\ Downloading Alert
+.alert-wrap
+  z-index 9999
+  position fixed
+  width 300px
+  right 50px
+  bottom 50px
+  margin auto
+  transform translateY(200%)
+  transition 300ms
+  &.appear
+    transform translateY(0)
+  .alert 
+    padding 25px
+    background $purple
+    border-radius $border-radius + 4px
+    transition 300ms
+    transform scale(0.98)
+    &.shadow
+      transform scale(1)
+      box-shadow  0px 20px 40px -20px rgba(0,0,0,0.8)
+    .alert-label
+      color #fff
+      font-size 14px
+      padding-left 60px
+      span 
+        position absolute
+        top 24px
+        left 40px
+      span i
+        font-size 22px

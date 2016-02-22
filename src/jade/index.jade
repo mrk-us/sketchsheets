@@ -22,7 +22,7 @@ html
             a(href='/')
               .logo
           .column.twelve
-            h1 Read to print device templates for UI & UX designers
+            h1 Ready to print device templates for UI & UX designers
             
     // Orientation Filter
     
@@ -75,12 +75,19 @@ html
       // Download Collection
       
       .download-collection
-        button.disabled.download-collection-button
+        button.download-collection-button
           .button-label
             | Download Collection
           .collection-total
             span.collection-total-count
               | 0
+      
+      // Downloading
+      
+      .alert-wrap
+        .alert
+          .alert-label
+            | #[span #[i.icon-check]] Your download has started
         
             
     include includes/footer.jade
