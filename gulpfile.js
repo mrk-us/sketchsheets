@@ -24,10 +24,6 @@ var config = {
     src: './src/jade/index.jade',
     destination: 'dist/'
   },
-  devicetemplates: {
-    src: './src/jade/devicetemplates/index.jade',
-    destination: 'dist/devicetemplates'
-  },
   zip: {
     src: './src/jade/includes/zip.php',
     destination: 'dist/'
@@ -84,22 +80,11 @@ gulp.task('index', function() {
   return gulp.src(config.index.src)
     .pipe(plumber())
     .pipe(jade({ 
-      pretty: true,
+      pretty: false,
       locals: locs 
     }))
     .pipe(rename('index.html'))
     .pipe(gulp.dest(config.index.destination));
-});
-gulp.task('devicetemplates', function() {
-  var locs = {};
-  return gulp.src(config.devicetemplates.src)
-    .pipe(plumber())
-    .pipe(jade({ 
-      pretty: true,
-      locals: locs 
-    }))
-    .pipe(rename('index.html'))
-    .pipe(gulp.dest(config.devicetemplates.destination));
 });
 gulp.task('zip', function() {
   var locs = {};
@@ -167,6 +152,6 @@ gulp.task('watch', function() {
 });
 
 // Command line tasks
-gulp.task('build', ['index', 'devicetemplates', 'zip', 'stylus', 'css', 'js', 'img', 'fav', 'sketchsheets', 'fonts']);
+gulp.task('build', ['index', 'zip', 'stylus', 'css', 'js', 'img', 'fav', 'sketchsheets', 'fonts']);
 gulp.task('w', ['build', 'watch']);
 gulp.task('default', ['build', 'webserver', 'watch', 'openbrowser']);

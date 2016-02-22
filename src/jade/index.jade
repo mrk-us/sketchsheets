@@ -3,25 +3,85 @@ doctype html
 html
   head
     include includes/head.jade
-    title Printable sketch sheets for UX & UI designers
-    meta(http-equiv="refresh", content="0; URL='devicetemplates'")
-    meta(name='title', content='Printable sketch sheets for UX & UI designers')
+    title Printable device sketch sheet templates for UX & UI designers
+    meta(name='title' ,content='Printable sketch sheets for UX & UI designers')
     meta(property='og:title', content='Printable sketch sheets for UX & UI designers')
     meta(name='twitter:title', content='Printable sketch sheets for UX & UI designers')
     meta(name='description', content='Download free printable device templates for UI & UX designers. Each sketch sheet contains a blank and dotted-grid version in .pdf, .png, and .eps formats.')
     meta(property='og:description', content='Download free printable device templates for UI & UX designers. Each sketch sheet contains a blank and dotted-grid version in .pdf, .png, and .eps formats.')
     meta(name='twitter:description', content='Download free printable device templates for UI & UX designers. Each sketch sheet contains a blank and dotted-grid version in .pdf, .png, and .eps formats.')
     link(rel='stylesheet', href='css/style.css')
-  body        
-    .wrap
-      nav
+  body     
+    
+    // Header
+    
+    header.hero
+      .wrap
         .row
-          .column.four.bottom
-            .logo
-              a(href='/')
-          .column.eight
-            ul
-              li
-                a(href='devicetemplates') Device Templates
-              li
-                span Icon Templates
+          .column.twelve
+            a(href='/')
+              .logo
+          .column.twelve
+            h1 Read to print device templates for UI & UX designers
+            
+    // Orientation Filter
+    
+    section.filters
+      .wrap
+        .row
+          .column
+            span Device
+            .filter.orientation
+              .filter-list(data-filter-group='orientation')
+                span Sort by:
+                button.button.checked(data-filter='') All
+                button.button(data-filter='.portrait') Portrait
+                button.button(data-filter='.landscape') Landscape
+                button.button(data-filter='.portrait-landscape') Mix
+            .line
+            
+    // Sidebar
+    
+    .wrap
+      aside.sidebar
+        .row
+          .column
+            // Device Filter
+            .filters  
+              .filter.device
+                .filter-list(data-filter-group='device')
+                  button.button.checked(data-filter='') All
+                  button.button(data-filter='.iphone5') iPhone 5
+                  button.button(data-filter='.iphone6') iPhone 6
+                  button.button(data-filter='.iphone6plus') iPhone 6 Plus
+                  button.button(data-filter='.ipad') iPad
+                  button.button(data-filter='.ipadpro') iPad Pro
+                  button.button(data-filter='.web') Web / Desktop
+                
+      // Sketchsheets
+
+      section.grid
+        form(name='zips' method='post' action='zip.php')
+          .row.justify.grid-content
+            include includes/iphone5.jade
+            include includes/iphone6.jade
+            include includes/iphone6plus.jade
+            include includes/ipad.jade
+          input(type='submit' name='zipit' class='zipit')
+          .end
+            p #[a(href='spotify:track:5UgT7w6zVZjP3oyawMzbiK') This is the end]
+            p Feel like something's missing? #[a(href='mailto:feedback@sketchsheets.com') Leave some feedback]
+      
+      // Download Collection
+      
+      .download-collection
+        button.disabled.download-collection-button
+          .button-label
+            | Download Collection
+          .collection-total
+            span.collection-total-count
+              | 0
+        
+            
+    include includes/footer.jade
+    include includes/scripts.jade
