@@ -126,19 +126,27 @@ button
         
 //\\//\\//\\//\\//\\//\\//\\//\\//\\ Sidebar
 
-.sidebar
+aside.sidebar
+  font-size 0
+  display inline-block
+  vertical-align top
+  position relative
   @media (min-width 600px)
-    width 180px
-    display inline-block
-    vertical-align top
+    width 170px
+  > *
+    font-size 14px
     
 //\\//\\//\\//\\//\\//\\//\\//\\//\\ Grid
-.grid
+section.grid
+  font-size 0
+  display inline-block
+  position relative
   @media (min-width 600px)
     width calc(100% - 180px)
-    display inline-block
-    vertical-align top
-.row
+  > *
+    font-size 14px
+    
+.grid-content
   > .column.column.item
     width 100%
     padding 25px
@@ -268,9 +276,9 @@ button
 //\\//\\//\\//\\//\\//\\//\\//\\//\\ Footer
     
 .footer
+  position relative
   .wrap 
     padding 0 25px
-  background #FFF
   .footer-links
     padding 100px 0
   h6

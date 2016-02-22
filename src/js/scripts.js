@@ -47,7 +47,10 @@ $(document).ready( function() {
     // Get total :checked
     checkbox.each(function() {
       // Display total :checked
-      $(label).html(total);
+      setTimeout(function() {
+        $(label).html(total);
+      }, 200);
+      
     });
     
     if (total > 0) { 
