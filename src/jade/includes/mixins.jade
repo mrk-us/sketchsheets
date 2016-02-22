@@ -9,7 +9,7 @@ mixin sketchsheet(device, filters, dir)
       span
         i.icon-plus
         i.icon-check
-      a(href='../sketchsheets/#{dir}/thumb.png' class='lightbox')
-        img(src='../sketchsheets/#{dir}/thumb.png' alt='#{filters}')
-      a(href='../sketchsheets/#{dir}.zip' class='downloadzip' onClick="ga('send', 'event', 'Sketchsheet', 'Download', '#{device}');") 
+      a(href='sketchsheets/#{dir}/thumb.png' class='lightbox')
+        img(src='sketchsheets/#{dir}/thumb.png' alt='#{filters}')
+      a(href='sketchsheets/#{dir}.zip' class='downloadzip' onClick="ga('send', 'event', 'Sketchsheet', 'Download', '#{device}');") 
         span Download 

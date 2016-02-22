@@ -1,11 +1,7 @@
 $(document).ready( function() {
-  // init Fluidbox
-  $('a.lightbox').fluidbox({
-    loader: true
-  });
   
   // init Isotope
-  var $grid = $('.grid').imagesLoaded( function() {
+  var $grid = $('.grid-content').imagesLoaded( function() {
     $grid.isotope({
       itemSelector: '.item',
       transitionDuration: '0.6s',
@@ -45,6 +41,7 @@ $(document).ready( function() {
   checkbox.change(function() {
     var total= $('input[name="files[]"]:checked').length;
     var card = $(this).parent();
+    
     card.toggleClass('border');
     // Get total :checked
     checkbox.each(function() {
@@ -60,11 +57,13 @@ $(document).ready( function() {
             $('input[name="zipit"]').trigger("click");
           }, 500);
         });
+        $('.download-collection').addClass('appear');
       }
     // Remove red bg color if 0
     else
       { classie.remove(label, 'color');
         classie.add(downloadCollection, 'disabled');
+        $('.download-collection').removeClass('appear');
       }
     $(clearCollection).on('click', function () {
       $('input[name="files[]"]:checked').trigger("click");
@@ -76,6 +75,7 @@ $(document).ready( function() {
       classie.remove(label, 'countAnim');
     }, 350);
   });
+  
   $('a.downloadzip').on('click', function(e) {
     e.preventDefault();
     var $this = $(this); //Assigned a reference
