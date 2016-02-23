@@ -26,11 +26,11 @@ html
             
     // Orientation Filter
     
-    section.filters
+    section.filters.desktop
       .wrap
         .row
           .column
-            span Device
+            span Devices
             .filter.orientation
               .filter-list(data-filter-group='orientation')
                 span Sort by:
@@ -50,6 +50,7 @@ html
             .filters  
               .filter.device
                 .filter-list(data-filter-group='device')
+                  span.title Devices
                   button.button.checked(data-filter='') All
                   button.button(data-filter='.iphone5') iPhone 5
                   button.button(data-filter='.iphone6') iPhone 6
@@ -57,6 +58,18 @@ html
                   button.button(data-filter='.ipad') iPad
                   // button.button(data-filter='.ipadpro') iPad Pro
                   // button.button(data-filter='.web') Web / Desktop
+                  
+      section.filters.mobile
+        .wrap
+          .row
+            .column
+              .filter.orientation
+                .filter-list(data-filter-group='orientation')
+                  span Sort by:
+                  button.button.checked(data-filter='') All
+                  button.button(data-filter='.portrait') Portrait
+                  button.button(data-filter='.landscape') Landscape
+                  button.button(data-filter='.portrait-landscape') Mix
                 
       // Sketchsheets
 

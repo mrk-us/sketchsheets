@@ -108,7 +108,9 @@ button
       padding 10px 0
       display block
   .orientation
-    float right
+    text-align center
+    @media (min-width 600px)
+      float right
     span
     button
       padding 0 10px
@@ -123,26 +125,41 @@ button
       &.checked
         color $purple
         cursor pointer
+    .title
+      display block
+      padding 0 10px 15px 0
+      @media (min-width 600px)
+        display none
         
+.filters.desktop
+  display none
+  @media (min-width 600px)
+    display block
+        
+.filters.mobile
+  margin-top 50px
+  @media (min-width 600px)
+    display none
+  
 //\\//\\//\\//\\//\\//\\//\\//\\//\\ Sidebar
 
 aside.sidebar
   font-size 0
-  display inline-block
-  vertical-align top
   position relative
   @media (min-width 600px)
     width 170px
+    display inline-block
+    vertical-align top
   > *
     font-size 14px
     
 //\\//\\//\\//\\//\\//\\//\\//\\//\\ Grid
 section.grid
   font-size 0
-  display inline-block
   position relative
   @media (min-width 600px)
     width calc(100% - 180px)
+    display inline-block
   > *
     font-size 14px
     
