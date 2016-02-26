@@ -1,6 +1,6 @@
 //- index.jade
 doctype html
-html
+html(lang="en")
   head
     include includes/head.jade
     title Printable device sketch sheet templates for UX & UI designers
@@ -11,56 +11,46 @@ html
     meta(property='og:description', content='Download free printable device templates for UI & UX designers. Each sketch sheet contains a blank and dotted-grid version in .pdf, .png, and .eps formats.')
     meta(name='twitter:description', content='Download free printable device templates for UI & UX designers. Each sketch sheet contains a blank and dotted-grid version in .pdf, .png, and .eps formats.')
     link(rel='stylesheet', href='css/style.css')
-    link(rel='stylesheet', href='css/fluidbox.css')
-    link(rel='stylesheet', href='css/hint.min.css')
-  body        
-    nav
-      .wrap
-        .row
-          .column.four.bottom
-            .logo
-              a(href='/')
-          .column.eight.top
-            ul
-              li
-                a.active(href='/') Device Templates
-              li
-                span.hint--top.hint--rounded.hint--bounce(data-hint='Coming soon') 
-                  | Icon Templates
-    section.hero
+  body     
+    
+    // Header
+    
+    header.hero
       .wrap
         .row
           .column.twelve
-            .title
-              h1 Ready to print device templates for UI &amp; UX designers
-          .column.six
-            a(href='')
-              .hero-card
-                h3 Create your own
-                p Download the .sketch
-          .column.six
-            a(href='')
-              .hero-card
-                h3 Share the love
-                p Tweet about us
+            a(href='/')
+              .logo
+          .column.twelve
+            h1 Ready to print device templates for UI & UX designers
+            
+    // Orientation Filter
+    
+    section.filters.desktop
+      .wrap
+        .row
+          .column
+            span Devices
+            .filter.orientation
+              .filter-list(data-filter-group='orientation')
+                span Sort by:
+                button.button.checked(data-filter='') All
+                button.button(data-filter='.portrait') Portrait
+                button.button(data-filter='.landscape') Landscape
+                button.button(data-filter='.portrait-landscape') Mix
+            .line
+            
+    // Sidebar
+    
     .wrap
-      .row
-        aside.column.aside-left.top.nest
-          .row.sidebar
-            .column.twelve
-              .download-collection
-                button.disabled.download-collection-button
-                  .button-label
-                    | Download Collection
-                  .collection-total
-                    span.collection-total-count
-                      | 0
-                button.clear-collection
-                  | Clear collection
-            .column.twelve
-              .filter
+      aside.sidebar
+        .row
+          .column
+            // Device Filter
+            .filters  
+              .filter.device
                 .filter-list(data-filter-group='device')
-                  span Device
+                  span.title Devices
                   button.button.checked(data-filter='') All
                   button.button(data-filter='.iphone5') iPhone 5
                   button.button(data-filter='.iphone6') iPhone 6
@@ -68,31 +58,50 @@ html
                   button.button(data-filter='.ipad') iPad
                   // button.button(data-filter='.ipadpro') iPad Pro
                   // button.button(data-filter='.web') Web / Desktop
-            .column.twelve
-              .filter
+                  
+      section.filters.mobile
+        .wrap
+          .row
+            .column
+              .filter.orientation
                 .filter-list(data-filter-group='orientation')
-                  span Orientation
+                  span Sort by:
                   button.button.checked(data-filter='') All
                   button.button(data-filter='.portrait') Portrait
                   button.button(data-filter='.landscape') Landscape
-                  button.button(data-filter='.portrait-landscape') Both
-            .column.twelve
-              .filter
-                .filter-list(data-filter-group='screen')
-                  span Screen
-                  button.button.checked(data-filter='') All
-                  button.button(data-filter='.standard') Standard
-                  button.button(data-filter='.scrolled') Scrolled
-                  button.button(data-filter='.standard-scrolled') Both
-        section.column.aside-right.top.nest
-          form(name='zips' method='post' action='zip.php')
-            .row.justify.grid
-              include includes/iphone5.jade
-              include includes/iphone6.jade
-              include includes/iphone6plus.jade
-              include includes/ipad.jade
-            input(type='submit' name='zipit' class='zipit')
+                  button.button(data-filter='.portrait-landscape') Mix
+                
+      // Sketchsheets
+
+      section.grid
+        form(name='zips' method='post' action='zip.php')
+          .row.justify.grid-content
+            include includes/iphone5.jade
+            include includes/iphone6.jade
+            // include includes/iphone6plus.jade
+            include includes/ipad.jade
+          input(type='submit' name='zipit' class='zipit')
+          .end
+            p #[a(href='spotify:track:5UgT7w6zVZjP3oyawMzbiK') This is the end]
+            p Feel like something's missing? #[a(href='mailto:mail@sketchsheets.com') Leave some feedback]
+      
+      // Download Collection
+      
+      .download-collection
+        button.download-collection-button
+          .button-label
+            | Download Collection
+          .collection-total
+            span.collection-total-count
+              | 0
+      
+      // Downloading
+      
+      .alert-wrap
+        .alert
+          .alert-label
+            | #[span #[i.icon-check]] Your download has started
+        
             
     include includes/footer.jade
-            
     include includes/scripts.jade
