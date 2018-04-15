@@ -1,7 +1,7 @@
 Sketchsheets
 ============
 
-Ready to print [sketch sheet](http://sketchsheets.com) templates for UX designers
+Ready to print [sketch sheet](https://sketchsheets.com) templates for UX designers
 [sketchsheets.com](http://sketchsheets.com)
 
 Sketchsheets is an open source project dedicated to providing a free source of printable templates to sketch your ideas onto the latest devices and platforms.
