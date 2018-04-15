@@ -1,0 +1,184 @@
+// Built upon 8pt Grid by Mark Wilson
+// https://github.com/rnarrkus/8pt-grid
+
+// Grid
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+  
+columns-4 = (one 1),
+            (two 2),
+            (three 3),
+            (four 4)
+
+columns-6 = (one 1),
+            (two 2),
+            (three 3),
+            (four 4),
+            (five 5),
+            (six 6)
+            
+columns-8 = (one 1),
+            (two 2),
+            (three 3),
+            (four 4),
+            (five 5),
+            (six 6),
+            (seven 7),
+            (eight 8)
+
+columns-12 = (one 1),
+             (two 2),
+             (three 3),
+             (four 4),
+             (five 5),
+             (six 6),
+             (seven 7),
+             (eight 8),
+             (nine 9),
+             (ten 10),
+             (eleven 11),
+             (twelve 12)
+
+columns-16 = (one 1),
+             (two 2),
+             (three 3),
+             (four 4),
+             (five 5),
+             (six 6),
+             (seven 7),
+             (eight 8),
+             (nine 9),
+             (ten 10),
+             (eleven 11),
+             (twelve 12),
+             (thirteen 13),
+             (fourteen 14),
+             (fifteen 15),
+             (sixteen 16)
+
+column-widths()
+  for column in columns- + number-of-columns
+    &.{column[0]}
+      percent ?= ((column[1]*100) / number-of-columns)
+      max-width percent + '%'
+      flex 0 0 percent + '%'
+
+// If no .flexi (flex item) width is defined,
+// each .flexi within a .flex will automatically
+// adjust its width based on the number of .flexi's
+column-auto-widths()
+  for n in 1..number-of-columns
+    > .flexi:first-child:nth-last-child({n}),
+    > .flexi:first-child:nth-last-child({n}) ~ *
+      percent ?= 100/n
+      max-width percent + '%'
+      flex 0 0 percent + '%'
+
+column-offset()
+  for column in columns- + number-of-columns
+    &.offset-{column[0]}
+      percent ?= ((column[1]*100) / number-of-columns)
+      margin-left percent + "%"
+
+.wrap
+  margin 0 auto
+
+.flex // Row
+  position relative
+  display flex
+  flex-direction row
+  flex-wrap wrap
+  align-content center // Default row vertical alignment
+  justify-content center // Default row horizontal alignment
+  align-items center // Default column vertical alignment
+  padding gutter 0
+
+  &.vertical
+    flex-direction column
+
+  &.no-wrap
+    flex-wrap nowrap
+    
+  &.no-padding
+    padding 0
+
+  // Row vertical alignment
+  &.v-top
+    align-content flex-start
+  &.v-bottom
+    align-content flex-end
+  &.v-space-between
+    align-content space-between
+  &.v-space-around
+    align-content space-between
+  &.v-stretch
+    align-content stretch
+
+  // Row horizontal alignment
+  &.h-left
+    justify-content flex-start
+  &.h-right
+    justify-content flex-end
+  &.h-space-between
+    justify-content space-between
+  &.h-space-around
+    justify-content space-around
+  &.h-space-even
+    justify-content space-evenly
+
+  // Column vertical alignment
+  &.flexi-top
+    align-items flex-start
+  &.flexi-bottom
+    align-items flex-end
+  &.flexi-stretch
+    align-items stretch
+  &.flexi-baseline
+    align-items baseline
+
+  > .flexi // Column
+    box-sizing border-box
+    position relative
+    padding gutter
+    width 100%
+    &.no-padding
+      padding 0
+
+//@media (max-width: screen-tablet)
+
+@media (min-width: screen-tablet)
+  
+  .wrap
+    width screen-tablet
+
+  div.flex
+    column-auto-widths()
+    > div.flexi.flexi
+      column-widths()
+      column-offset()
+      
+      &.d-four.t-six
+        width 50%
+        max-width 50%
+        flex 0 0 50%
+        
+@media (max-width: screen-desktop)
+  div.flex
+    > div.flexi.flexi
+      &.t-twelve.t-twelve
+        width 100%
+        max-width 100%
+        flex 0 0 100%
+
+@media (min-width: screen-desktop)
+  
+  .wrap
+    width screen-desktop
+    
+  div.flex
+    > div.flexi.flexi
+      &.d-four.t-six
+        width (100 / 3) + '%'
+        max-width (100 / 3) + '%'
+        flex 0 0 (100 / 3) + '%'
+
+//@media (min-width: screen-desktop-large)

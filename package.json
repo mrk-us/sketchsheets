@@ -1,0 +1,41 @@
+{
+	"name": "milligram-starter",
+	"version": "0.0.6",
+	"description": "A super simple boilerplate project with Milligram.",
+	"homepage": "https://milligram.github.io",
+	"repository": "milligram/milligram-starter",
+	"license": "MIT",
+	"author": "CJ Patoilo <cjpatoilo@gmail.com>",
+	"private": "true",
+	"engines": {
+		"node": ">=4"
+	},
+	"devDependencies": {
+		"browser-sync": "^2.18.2",
+		"ncp": "^2.0.0",
+		"npm-run-all": "^3.1.2",
+		"onchange": "^3.2.0",
+		"pug": "^2.0.3",
+		"stylus": "^0.54.5",
+		"autoprefixer": "^6.5.3",
+		"postcss-cli": "^2.6.0",
+		"rimraf": "^2.5.4"
+	},
+	"browserslist": [
+		"> 1%",
+		"last 3 versions"
+	],
+	"scripts": {
+		"start": "run-s clean build && run-p watch serve",
+		"clean": "rimraf dist",
+		"pug": "pug dist/* && find ./dist -name '*.pug' -delete && rm -rf dist/include",
+		"stylus": "stylus dist/styles/main.styl -o dist/styles/main.css && stylus --compress dist/styles/Nanogram/nanogram.styl -o dist/styles/nanogram.min.css && rm -rf dist/styles/Nanogram && find ./dist -name '*.styl' -delete",
+		"autoprefixer": "postcss -u autoprefixer browserslist -r dist/styles/*.css",
+		"meta": "mv dist/images/favicons/* dist && rm -rf dist/images/favicons",
+		"build": "ncp src dist && run-s pug stylus autoprefixer meta",
+		"watch": "onchange src/* -- run-s build",
+		"serve": "browser-sync --no-notify start -s dist -f dist",
+		"test": "run-s clean build bower",
+		"prestart": "npm i"
+	}
+}

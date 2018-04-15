@@ -1,0 +1,277 @@
+// Sketchsheets 2018 by Mark Wilson
+
+// Use Nanogram Colors
+@require 'Nanogram/_Color'
+// Use Nanogram Config
+@require 'Nanogram/_Config'
+// Use Animations
+@require '_Animations'
+
+// Site styles
+ 
+a 
+  color color-secondary
+  text-decoration underline
+  &:hover
+    color color-dark
+
+.hero 
+  position relative
+  background color-tertiary url('../images/hero-background.png') center center no-repeat
+  .hero-content
+    height 86vh
+    @media (min-width: screen-desktop)
+      padding 0 2.4rem
+    > *
+      @media (min-width: screen-desktop)
+        margin-bottom 2rem
+    p 
+      @media (max-width: screen-desktop)
+        margin-bottom 0
+  
+.hero 
+  svg.logo
+    margin 0 0 1rem 0
+    path
+      stroke color-secondary
+      stroke-width 0.5
+      stroke-dasharray 150
+      fill-opacity 0
+      stroke-dashoffset 0
+      animation-name stroke
+      animation-duration 2.5s
+      animation-timing-function ease-in-out
+      animation-fill-mode both
+      
+.hero 
+  p
+    margin 0 0 1rem 0
+  .social-btns
+    position relative
+    margin auto
+    top 2.4rem
+    animation-delay 0.2s
+    @media (min-width: screen-desktop)
+      top 0
+    @media (min-width: screen-desktop)
+      margin-top 2.4rem
+  button.social
+    height 3.2rem
+    position relative
+    margin auto
+    padding 0 2.4rem 0 0
+    display inline-flex
+    animation-fill-mode both
+    animation-duration 0.3s
+    &:hover
+      animation-name jelly
+      span.label
+        color color-dark
+    img.icon
+      display inline-block
+      position relative
+      top 0
+      bottom 0
+      left 0
+      width 2rem
+      height 2rem
+      margin auto
+    span.label
+      display inline-block
+      position relative
+      margin 0
+      top 0
+      left 0.8rem
+      bottom 0
+      padding 0
+      font-size 1.4rem
+      letter-spacing -0.01rem
+      text-transform capitalize
+      font-weight 400
+      color color-secondary
+      height 3.2rem
+      line-height 3.2rem
+  
+.hero button.downloadAll,
+.hero small
+  display block
+  @media (min-width: screen-desktop)
+    float right
+
+.hero button.downloadAll
+  text-transform capitalize
+  letter-spacing 0.01rem
+  font-size 1.6rem
+  line-height 1.6rem
+  font-weight 500
+    
+.hero small
+  color alpha(color-secondary, 66%)
+  width 100%
+  @media (min-width: screen-desktop)
+    text-align right
+    
+.filters
+  animation-delay 0.4s
+  .filters-content
+    text-align center
+    padding 3.2rem 0 2.4rem 0
+    @media (min-width: screen-tablet)
+      padding 3.2rem 0 1rem 0
+  button
+    position relative
+    padding 0 1.6rem
+    height 4.8rem
+    line-height 4.8rem
+    letter-spacing 0.01rem
+    text-transform capitalize
+    font-size 1.4rem
+    color color-secondary
+    font-weight 400
+    margin-bottom 0
+    &:hover
+      color alpha(color-secondary, 50%)
+    &:after
+      content ''
+      display block
+      position absolute
+      bottom 0
+      left 0
+      right 0
+      width 100%
+      margin auto
+      height 0.15rem
+      background color-dark
+      transform scaleX(0)
+      animation-duration 0.3s
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    &.active
+      color color-dark
+      &:after
+        -webkit-animation-name: rubberBand;
+        animation-name: rubberBand;
+    
+.grid 
+  .grid-content
+    overflow hidden
+    padding .4rem
+    @media (min-width: screen-tablet)
+      padding 0
+    .flexi
+      padding .8rem
+      @media (min-width: screen-tablet)
+        padding 2.4rem
+  .grid-end
+    padding 3.2rem 0
+    p 
+      text-align center
+      margin 0 auto 1.6rem auto
+
+.grid-item
+  position relative
+  background color-tertiary
+  height 420px
+  border-radius .4rem
+  text-align center
+  cursor pointer
+  overflow hidden
+  perspective 500px
+  transition 0.1s
+  img
+    position absolute
+    margin auto
+    top 0
+    right 0
+    left 0
+    bottom 0
+    transform-style preserve-3d
+  span,
+  small
+    display block
+    position absolute
+    left 0
+    right 0
+    margin auto
+  span
+    bottom 6rem
+  small
+    bottom 4rem
+  &.new:after
+    content 'New'
+    display block
+    position absolute
+    top 2.4rem
+    right 2.4rem
+    padding 1rem 1.2rem
+    background color-primary
+    color color-initial
+    font-size 1.2rem
+    letter-spacing 0.01rem
+    font-weight 500
+    line-height 1.1rem
+    border-radius .4rem
+    box-shadow 0 5px 20px -8px alpha(color-primary, 50%)
+    
+.footer
+  background color-tertiary
+  .footer-content
+    @media (min-width: screen-desktop)
+      padding 1.6rem 2.4rem
+    .flexi
+      padding 0.8rem 1.6rem
+      @media (min-width: screen-tablet)
+        padding 1.6rem
+    a
+      color color-secondary
+      &:hover
+        color alpha(color-secondary, 50%)
+    .about
+      padding 19.2rem 0
+      p
+        max-width 56rem
+        margin 0
+    .license
+      padding 0
+      p
+        font-size 1.6rem
+        font-weight 400
+        letter-spacing 0.01rem
+        margin 0
+    .support
+      form 
+        padding 0
+        margin 0
+      input[name='support'] 
+        display block
+        position relative
+        margin 0
+        padding 0
+        outline 0
+        border 0
+        height 1.6rem
+        font-size 1.6rem
+        font-weight 400
+        line-height 1.6rem
+        letter-spacing 0.01em
+        background none
+        text-transform capitalize
+        color color-dark
+        @media (min-width: screen-tablet)
+          float right
+          text-align right
+        &:hover
+          color alpha(color-secondary, 50%)
+          
+.error-code
+  position relative
+  height 100vh
+  img 
+    position absolute
+    top 8rem
+    left 0
+    right 0
+    bottom 0
+    margin auto
+    
+    
