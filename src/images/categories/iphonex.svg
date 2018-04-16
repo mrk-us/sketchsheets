@@ -31,7 +31,7 @@
                                 <g id="Device">
                                     <g id="Shape">
                                         <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                                        <use fill="#F7F9FA" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                        <use fill="#FAFAFA" fill-rule="evenodd" xlink:href="#path-1"></use>
                                         <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
                                     </g>
                                     <mask id="mask-5" fill="white">

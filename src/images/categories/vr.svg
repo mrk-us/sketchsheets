@@ -144,11 +144,11 @@
                                 </g>
                                 <g id="Right" transform="translate(196.000000, 80.000000)">
                                     <g id="Shape">
-                                        <use fill="#F7F9FA" fill-rule="evenodd" xlink:href="#path-3"></use>
+                                        <use fill="#FAFAFA" fill-rule="evenodd" xlink:href="#path-3"></use>
                                         <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
                                     </g>
                                     <g id="Shape" transform="translate(22.886983, 70.462298) rotate(13.000000) translate(-22.886983, -70.462298) ">
-                                        <use fill="#F7F9FA" fill-rule="evenodd" xlink:href="#path-6"></use>
+                                        <use fill="#FAFAFA" fill-rule="evenodd" xlink:href="#path-6"></use>
                                         <use fill="url(#linearGradient-5)" fill-rule="evenodd" xlink:href="#path-6"></use>
                                         <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
                                     </g>
@@ -157,22 +157,22 @@
                                         <use fill="url(#linearGradient-8)" xlink:href="#path-9"></use>
                                     </g>
                                     <g id="Shape">
-                                        <use fill="#F7F9FA" fill-rule="evenodd" xlink:href="#path-10"></use>
+                                        <use fill="#FAFAFA" fill-rule="evenodd" xlink:href="#path-10"></use>
                                         <use fill="black" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-10"></use>
                                     </g>
                                     <g id="Shape">
-                                        <use fill="#F7F9FA" xlink:href="#path-14"></use>
+                                        <use fill="#FAFAFA" xlink:href="#path-14"></use>
                                         <use fill="url(#linearGradient-12)" xlink:href="#path-14"></use>
                                         <use fill="url(#linearGradient-13)" xlink:href="#path-14"></use>
                                     </g>
                                 </g>
                                 <g id="Left" transform="translate(28.500000, 132.500000) scale(-1, 1) translate(-28.500000, -132.500000) translate(0.000000, 80.000000)">
                                     <g id="Shape">
-                                        <use fill="#F7F9FA" fill-rule="evenodd" xlink:href="#path-15"></use>
+                                        <use fill="#FAFAFA" fill-rule="evenodd" xlink:href="#path-15"></use>
                                         <use fill="black" fill-opacity="1" filter="url(#filter-16)" xlink:href="#path-15"></use>
                                     </g>
                                     <g id="Shape" transform="translate(22.886983, 70.462298) rotate(13.000000) translate(-22.886983, -70.462298) ">
-                                        <use fill="#F7F9FA" fill-rule="evenodd" xlink:href="#path-17"></use>
+                                        <use fill="#FAFAFA" fill-rule="evenodd" xlink:href="#path-17"></use>
                                         <use fill="url(#linearGradient-5)" fill-rule="evenodd" xlink:href="#path-17"></use>
                                         <use fill="black" fill-opacity="1" filter="url(#filter-18)" xlink:href="#path-17"></use>
                                     </g>
@@ -185,20 +185,20 @@
                                         <use fill="black" fill-opacity="1" filter="url(#filter-21)" xlink:href="#path-20"></use>
                                     </g>
                                     <g id="Shape">
-                                        <use fill="#F7F9FA" xlink:href="#path-22"></use>
+                                        <use fill="#FAFAFA" xlink:href="#path-22"></use>
                                         <use fill="url(#linearGradient-12)" xlink:href="#path-22"></use>
                                         <use fill="url(#linearGradient-13)" xlink:href="#path-22"></use>
                                     </g>
                                 </g>
                                 <g id="Shape">
                                     <use fill="black" fill-opacity="1" filter="url(#filter-26)" xlink:href="#path-25"></use>
-                                    <use fill="#F7F9FA" fill-rule="evenodd" xlink:href="#path-25"></use>
+                                    <use fill="#FAFAFA" fill-rule="evenodd" xlink:href="#path-25"></use>
                                     <use fill="url(#linearGradient-23)" fill-rule="evenodd" xlink:href="#path-25"></use>
                                     <use fill="url(#linearGradient-24)" fill-rule="evenodd" xlink:href="#path-25"></use>
                                     <use fill="black" fill-opacity="1" filter="url(#filter-27)" xlink:href="#path-25"></use>
                                 </g>
                                 <g id="Shape">
-                                    <use fill="#F7F9FA" fill-rule="evenodd" xlink:href="#path-28"></use>
+                                    <use fill="#FAFAFA" fill-rule="evenodd" xlink:href="#path-28"></use>
                                     <use fill="black" fill-opacity="1" filter="url(#filter-29)" xlink:href="#path-28"></use>
                                 </g>
                                 <g id="Shape">
@@ -212,7 +212,7 @@
                                 </g>
                                 <g id="Shape">
                                     <use fill="black" fill-opacity="1" filter="url(#filter-37)" xlink:href="#path-36"></use>
-                                    <use fill="#F7F9FA" fill-rule="evenodd" xlink:href="#path-36"></use>
+                                    <use fill="#FAFAFA" fill-rule="evenodd" xlink:href="#path-36"></use>
                                     <use fill="url(#radialGradient-35)" fill-rule="evenodd" xlink:href="#path-36"></use>
                                 </g>
                             </g>

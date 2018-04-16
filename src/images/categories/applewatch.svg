@@ -4,24 +4,24 @@
     <title>applewatch</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <filter x="-43.1%" y="-22.9%" width="186.1%" height="145.8%" filterUnits="objectBoundingBox" id="filter-1">
-            <feGaussianBlur stdDeviation="14.3582589" in="SourceGraphic"></feGaussianBlur>
+        <filter x="-43.6%" y="-25.1%" width="187.3%" height="150.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="14.5452009" in="SourceGraphic"></feGaussianBlur>
         </filter>
         <radialGradient cx="50%" cy="83.347337%" fx="50%" fy="83.347337%" r="6.95096858%" gradientTransform="translate(0.500000,0.833473),scale(1.000000,0.530402),rotate(-90.000000),scale(1.000000,11.207615),translate(-0.500000,-0.833473)" id="radialGradient-2">
-            <stop stop-color="#EEF1F2" offset="0%"></stop>
-            <stop stop-color="#F7F9FA" stop-opacity="0" offset="100%"></stop>
+            <stop stop-color="#F2F2F2" offset="0%"></stop>
+            <stop stop-color="#FAFAFA" stop-opacity="0" offset="100%"></stop>
         </radialGradient>
         <radialGradient cx="51.6887903%" cy="18.2225787%" fx="51.6887903%" fy="18.2225787%" r="6.95096858%" gradientTransform="translate(0.516888,0.182226),scale(1.000000,0.530402),rotate(-90.000000),scale(1.000000,11.207615),translate(-0.516888,-0.182226)" id="radialGradient-3">
             <stop stop-color="#FFFFFF" offset="0%"></stop>
-            <stop stop-color="#F7F9FA" stop-opacity="0" offset="100%"></stop>
+            <stop stop-color="#FAFAFA" stop-opacity="0" offset="100%"></stop>
         </radialGradient>
         <linearGradient x1="53.7226498%" y1="6.07964611%" x2="53.7226498%" y2="-0.88568891%" id="linearGradient-4">
-            <stop stop-color="#F7F9FA" stop-opacity="0" offset="0%"></stop>
-            <stop stop-color="#EAEEF0" offset="100%"></stop>
+            <stop stop-color="#FAFAFA" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#F0F0F0" offset="100%"></stop>
         </linearGradient>
         <linearGradient x1="53.7226498%" y1="81.0567532%" x2="53.7226498%" y2="100%" id="linearGradient-5">
-            <stop stop-color="#F7F9FA" stop-opacity="0" offset="0%"></stop>
-            <stop stop-color="#D3D5D6" stop-opacity="0.428810009" offset="100%"></stop>
+            <stop stop-color="#FAFAFA" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#D6D6D6" stop-opacity="0.43" offset="100%"></stop>
         </linearGradient>
         <path d="M97.5569078,41.4469588 C105.628981,44.5789378 111.352241,52.4257082 111.352241,61.6096765 L111.352241,148.073306 C111.352241,154.9386 108.153308,161.05642 103.166603,165.016299 C102.728337,165.482893 102.256943,165.931075 101.751487,166.356654 C101.751487,166.356654 97.2791459,169.246015 95.177341,171.256399 C93.0755361,173.266783 92.2453459,175.415992 91.3766413,177.88378 C89.4932472,183.234066 88.6865888,198.02087 88.3064225,201.288751 C87.9650402,204.223247 86.8273308,206.179769 83.1983644,207.252026 C81.9263179,207.62788 72.7180901,210.005753 56.8466578,210.129222 C56.7492049,210.132312 56.651943,210.131814 56.5548672,210.131232 C56.4579117,210.131814 56.3607102,210.132312 56.2632633,210.132725 C40.3520141,210.005825 29.5069955,207.627886 28.2349297,207.252026 C24.6059632,206.179769 23.4682539,204.223247 23.1268715,201.288751 C22.7467053,198.02087 22.024687,183.522566 20.0566528,177.88378 C19.1951504,175.415415 18.357758,173.266783 16.255953,171.256399 C14.1541481,169.246015 9.68180704,166.356654 9.68180704,166.356654 C9.02322851,165.80215 8.42247471,165.209275 7.87748108,164.587296 C3.19160029,160.621854 0.216216216,154.695169 0.216216216,148.073306 L0.216216216,61.6096765 C0.216216216,52.535107 5.80527918,44.7664959 13.7244569,41.5611919 C14.6616735,40.8591326 15.581032,40.1229326 16.255953,39.4773682 C18.357758,37.4669844 19.2398306,35.1934186 20.0566528,32.849987 C21.9509559,27.4153037 22.7467053,12.7128974 23.1268715,9.4450168 C23.4682539,6.51051998 24.6059632,4.5539988 28.2349297,3.48174123 C29.5069955,3.10588152 40.3520141,0.727942362 56.2632633,0.601042741 C56.3607102,0.601455253 56.4579117,0.601952954 56.5548672,0.602534889 C56.651943,0.601952954 56.7492049,0.601455253 56.8466578,0.604545356 C72.7180901,0.728014764 81.9263179,3.10588724 83.1983644,3.48174123 C86.8273308,4.5539988 87.9650402,6.51051998 88.3064225,9.4450168 C88.6865888,12.7128974 89.6361623,26.6287275 91.3766413,32.849987 C92.0705658,35.3303872 93.0755361,37.4669844 95.177341,39.4773682 C95.815746,40.0880049 96.6728538,40.7797349 97.5569078,41.4469588 Z M28.1316776,169.690616 C29.7716074,169.74473 31.3221402,169.783643 32.3900414,169.783643 L56.5549576,169.783643 L79.0432526,169.783643 C80.1111538,169.783643 81.6616866,169.74473 83.3016165,169.690616 L28.1316776,169.690616 Z" id="path-6"></path>
         <filter x="-3.1%" y="-1.7%" width="106.3%" height="103.3%" filterUnits="objectBoundingBox" id="filter-7">
@@ -65,9 +65,9 @@
                             <rect id="bounds" x="0" y="0" width="356" height="420"></rect>
                             <g transform="translate(122.000000, 70.000000)">
                                 <g id="Device" transform="translate(0.581081, 0.637654)">
-                                    <ellipse id="Oval" fill="#000000" opacity="0.14917346" filter="url(#filter-1)" cx="56" cy="116" rx="50" ry="94"></ellipse>
+                                    <ellipse id="Oval" fill="#000000" opacity="0.204200634" filter="url(#filter-1)" cx="56" cy="109" rx="50" ry="87"></ellipse>
                                     <g id="Shape">
-                                        <use fill="#F7F9FA" fill-rule="evenodd" xlink:href="#path-6"></use>
+                                        <use fill="#FAFAFA" fill-rule="evenodd" xlink:href="#path-6"></use>
                                         <use fill="url(#radialGradient-2)" fill-rule="evenodd" xlink:href="#path-6"></use>
                                         <use fill-opacity="0.5" fill="url(#radialGradient-3)" fill-rule="evenodd" xlink:href="#path-6"></use>
                                         <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-6"></use>

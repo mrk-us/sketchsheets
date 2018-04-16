@@ -30,7 +30,7 @@
                                 <g id="Device">
                                     <g id="Shape">
                                         <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                                        <use fill="#F7F9FA" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                        <use fill="#FAFAFA" fill-rule="evenodd" xlink:href="#path-1"></use>
                                         <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
                                     </g>
                                     <rect id="Shape" fill="#DFDFDF" x="52.6828483" y="8.05734355" width="15.269279" height="2.02551661" rx="1.0127583"></rect>

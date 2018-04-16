@@ -29,7 +29,7 @@
                                 <g id="Device">
                                     <g id="Shape">
                                         <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                                        <use fill="#F7F9FA" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                        <use fill="#FAFAFA" fill-rule="evenodd" xlink:href="#path-1"></use>
                                         <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
                                     </g>
                                     <circle id="Shape" fill="#DFDFDF" cx="130.125979" cy="6.69148936" r="1.5"></circle>

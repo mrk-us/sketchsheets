@@ -48,17 +48,17 @@
                             <g transform="translate(62.000000, 98.000000)" id="Shape">
                                 <g>
                                     <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
-                                    <use fill="#F7F9FA" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                    <use fill="#FAFAFA" fill-rule="evenodd" xlink:href="#path-2"></use>
                                     <use fill="url(#radialGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
                                 </g>
                                 <g>
                                     <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
-                                    <use fill="#F7F9FA" fill-rule="evenodd" xlink:href="#path-5"></use>
+                                    <use fill="#FAFAFA" fill-rule="evenodd" xlink:href="#path-5"></use>
                                     <use fill="url(#radialGradient-4)" fill-rule="evenodd" xlink:href="#path-5"></use>
                                 </g>
                                 <g>
                                     <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
-                                    <use fill="#F7F9FA" fill-rule="evenodd" xlink:href="#path-8"></use>
+                                    <use fill="#FAFAFA" fill-rule="evenodd" xlink:href="#path-8"></use>
                                     <use fill="url(#radialGradient-7)" fill-rule="evenodd" xlink:href="#path-8"></use>
                                 </g>
                             </g>

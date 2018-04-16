@@ -31,7 +31,7 @@
                             <rect id="bounds" x="0" y="0" width="356" height="420"></rect>
                             <g id="Shape">
                                 <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
-                                <use fill="#F7F9FA" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                <use fill="#FCFCFC" fill-rule="evenodd" xlink:href="#path-2"></use>
                                 <use fill="url(#radialGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
                                 <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
                             </g>

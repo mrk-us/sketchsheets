@@ -24,13 +24,13 @@
             <g id="Group-4" transform="translate(440.000000, 1031.000000)">
                 <g id="Group-5-Copy" transform="translate(406.000000, 0.000000)">
                     <g id="Card">
-                        <g id="Group-19">
+                        <g id="iPhone-8">
                             <rect id="bounds" x="0" y="0" width="356" height="420"></rect>
-                            <g id="iPhone-8" transform="translate(114.000000, 48.000000)">
+                            <g transform="translate(114.000000, 48.000000)">
                                 <g id="Device">
                                     <g id="Shape">
                                         <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                                        <use fill="#F7F9FA" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                        <use fill="#FAFAFA" fill-rule="evenodd" xlink:href="#path-1"></use>
                                         <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
                                     </g>
                                     <path d="M63.5729047,250.76635 L63.5729047,250.76635 C68.4046037,250.76635 72.3214696,246.847277 72.3214696,242.012856 C72.3214696,237.178435 68.4046037,233.259363 63.5729047,233.259363 C58.7412057,233.259363 54.8243398,237.178435 54.8243398,242.012856 C54.8243398,246.847277 58.7412057,250.76635 63.5729047,250.76635 L63.5729047,250.76635 Z M63.5729047,251.933482 L63.5729047,251.933482 C58.0969792,251.933482 53.6578645,247.491867 53.6578645,242.012856 C53.6578645,236.533846 58.0969792,232.09223 63.5729047,232.09223 C69.0488302,232.09223 73.4879449,236.533846 73.4879449,242.012856 C73.4879449,247.491867 69.0488302,251.933482 63.5729047,251.933482 L63.5729047,251.933482 Z" id="Shape" fill="#DFDFDF" fill-rule="nonzero"></path>
