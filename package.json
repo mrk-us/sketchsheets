@@ -1,12 +1,12 @@
 {
-	"name": "milligram-starter",
-	"version": "0.0.6",
-	"description": "A super simple boilerplate project with Milligram.",
-	"homepage": "https://milligram.github.io",
-	"repository": "milligram/milligram-starter",
-	"license": "MIT",
-	"author": "CJ Patoilo <cjpatoilo@gmail.com>",
-	"private": "true",
+	"name": "Sketchsheets",
+	"version": "2.0.0",
+	"description": "Ready to print sketch sheet templates for UX designers",
+	"homepage": "https://sketchsheets.com",
+	"repository": "rnarrkus/sketchsheets",
+	"license": "MIT (code), CC BY-SA 4.0 (image templates)",
+	"author": "Mark Wilson <e@markwil.so>",
+	"private": "false",
 	"engines": {
 		"node": ">=4"
 	},
