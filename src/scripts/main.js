@@ -1,8 +1,6 @@
 var $card, $downloadAll, $filter, $grid, $logoFill, $logoStroke;
 
-$logoStroke = $('.logo-stroke');
-
-$logoFill = $('.logo-fill');
+$logoStroke = $('.logo');
 
 $downloadAll = $('.downloadAll');
 
@@ -13,9 +11,9 @@ $grid = $('.grid');
 $filter = mixitup($grid);
 
 // Animation logo
-setTimeout((function() {
-  $logoStroke.show();
-}), 500);
+//setTimeout((function() {
+//  $logoStroke.show();
+//}), 200);
 
 // Change active class on buttons
 $('.filters-content').each(function(i, buttonGroup) {
