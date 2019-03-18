@@ -8,16 +8,16 @@
 @require '_Animations'
 
 // Site styles
- 
-a 
+
+a
   color color-secondary
   text-decoration underline
   &:hover
     color color-dark
 
-.hero 
+.hero
   position relative
-  background color-tertiary url('../images/hero-background.png') center center no-repeat
+  background url('../images/hero-background.png') center center no-repeat
   .hero-content
     height 86vh
     @media (min-width: screen-desktop)
@@ -25,13 +25,13 @@ a
     > *
       @media (min-width: screen-desktop)
         margin-bottom 2rem
-    p 
+    p
       @media (max-width: screen-desktop)
         margin-bottom 0
     a
       text-decoration none
-  
-.hero 
+
+.hero
   svg.logo
     margin 0 0 1rem 0
     path
@@ -44,8 +44,8 @@ a
       animation-duration 2.5s
       animation-timing-function ease-in-out
       animation-fill-mode both
-      
-.hero 
+
+.hero
   p
     margin 0 0 1rem 0
   .social-btns
@@ -93,7 +93,7 @@ a
       color color-secondary
       height 3.2rem
       line-height 3.2rem
-  
+
 .hero button.downloadAll,
 .hero small
   display block
@@ -106,13 +106,13 @@ a
   font-size 1.6rem
   line-height 1.6rem
   font-weight 500
-    
+
 .hero small
   color alpha(color-secondary, 66%)
   width 100%
   @media (min-width: screen-desktop)
     text-align right
-    
+
 .filters
   animation-delay 0.4s
   .filters-content
@@ -153,8 +153,8 @@ a
       &:after
         -webkit-animation-name: rubberBand;
         animation-name: rubberBand;
-    
-.grid 
+
+.grid
   .grid-content
     overflow hidden
     padding .4rem
@@ -166,7 +166,7 @@ a
         padding 2.4rem
   .grid-end
     padding 3.2rem 0
-    p 
+    p
       text-align center
       margin 0 auto 1.6rem auto
 
@@ -216,7 +216,7 @@ a
     line-height 1.1rem
     border-radius .4rem
     box-shadow 0 5px 20px -8px alpha(color-primary, 50%)
-    
+
 .footer
   background color-card
   .footer-content
@@ -243,10 +243,10 @@ a
         letter-spacing 0.01rem
         margin 0
     .support
-      form 
+      form
         padding 0
         margin 0
-      input[name='support'] 
+      input[name='support']
         position relative
         margin 0
         padding 0
@@ -266,16 +266,14 @@ a
           text-align right
         &:hover
           color alpha(color-secondary, 50%)
-          
+
 .error-code
   position relative
   height 100vh
-  img 
+  img
     position absolute
     top 8rem
     left 0
     right 0
     bottom 0
     margin auto
-    
-    

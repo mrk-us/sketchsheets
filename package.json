@@ -1,6 +1,6 @@
 {
 	"name": "Sketchsheets",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "Ready to print sketch sheet templates for UX designers",
 	"homepage": "https://sketchsheets.com",
 	"repository": "rnarrkus/sketchsheets",
@@ -11,26 +11,26 @@
 		"node": ">=4"
 	},
 	"devDependencies": {
-		"browser-sync": "^2.24.7",
+		"autoprefixer": "^6.7.7",
+		"browser-sync": "^2.26.3",
 		"ncp": "^2.0.0",
 		"npm-run-all": "^3.1.2",
-		"onchange": "^3.2.0",
+		"onchange": "^5.2.0",
+		"postcss-cli": "^6.1.2",
 		"pug": "^2.0.3",
-		"stylus": "^0.54.5",
-		"autoprefixer": "^6.5.3",
-		"postcss-cli": "^2.6.0",
-		"rimraf": "^2.5.4"
+		"rimraf": "^2.6.3",
+		"stylus": "^0.54.5"
 	},
 	"browserslist": [
 		"> 1%",
-		"last 3 versions"
+		"last 2 versions"
 	],
 	"scripts": {
 		"start": "run-s clean build && run-p watch serve",
 		"clean": "rimraf dist",
 		"pug": "pug dist/* && find ./dist -name '*.pug' -delete && rm -rf dist/include",
 		"stylus": "stylus dist/styles/main.styl -o dist/styles/main.css && stylus --compress dist/styles/Nanogram/nanogram.styl -o dist/styles/nanogram.min.css && rm -rf dist/styles/Nanogram && find ./dist -name '*.styl' -delete",
-		"autoprefixer": "postcss -u autoprefixer browserslist -r dist/styles/*.css",
+		"autoprefixer": "postcss -r dist/styles/*.css browserslist -u autoprefixer",
 		"meta": "mv dist/images/favicons/* dist && rm -rf dist/images/favicons",
 		"build": "ncp src dist && run-s pug stylus autoprefixer meta",
 		"watch": "onchange src/* -- run-s build",
