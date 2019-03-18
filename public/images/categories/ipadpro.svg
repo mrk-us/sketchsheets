@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="356px" height="420px" viewBox="0 0 356 420" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>ipadpro</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,9.40354112 C0,4.21022395 4.19868341,0 9.37753231,0 L177.355056,0 C182.534217,0 186.732588,4.20993377 186.732588,9.40354112 L186.732588,249.634053 C186.732588,254.82737 182.533905,259.037594 177.355056,259.037594 L9.37753231,259.037594 C4.19837093,259.037594 0,254.82766 0,249.634053 L0,9.40354112 Z" id="path-1"></path>
+        <filter x="-17.4%" y="-6.8%" width="134.8%" height="127.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="7.5" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="20" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.153504303 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-9.1%" y="-0.8%" width="118.2%" height="115.1%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-53" transform="translate(-846.000000, -1501.000000)">
+            <g id="Group-4" transform="translate(440.000000, 1031.000000)">
+                <g id="Group-5" transform="translate(406.000000, 470.000000)">
+                    <g id="Card">
+                        <g id="iPad-Pro">
+                            <rect id="bounds" x="0" y="0" width="356" height="420"></rect>
+                            <g transform="translate(85.000000, 48.000000)">
+                                <g id="Device">
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <g id="Shape" fill-rule="nonzero">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                                        <use fill="#FAFAFA" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-1"></use>
+                                    </g>
+                                    <path d="M93.5743766,253.585526 L93.5743766,253.585526 C95.7849402,253.585526 97.5769561,251.79172 97.5769561,249.578947 C97.5769561,247.366175 95.7849402,245.572368 93.5743766,245.572368 C91.363813,245.572368 89.5717971,247.366175 89.5717971,249.578947 C89.5717971,251.79172 91.363813,253.585526 93.5743766,253.585526 L93.5743766,253.585526 Z M93.5743766,254.157895 L93.5743766,254.157895 C91.0480182,254.157895 89,252.10783 89,249.578947 C89,247.050065 91.0480182,245 93.5743766,245 C96.1007351,245 98.1487532,247.050065 98.1487532,249.578947 C98.1487532,252.10783 96.1007351,254.157895 93.5743766,254.157895 L93.5743766,254.157895 Z" id="Shape" fill="#DFDFDF" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                                    <ellipse id="Shape" fill="#DFDFDF" mask="url(#mask-2)" cx="93.38865" cy="10.3900376" rx="1.38865004" ry="1.39003759"></ellipse>
+                                </g>
+                                <g id="Screen" transform="translate(9.000000, 18.000000)" fill="#FFFFFF">
+                                    <rect x="0" y="0" width="167.291488" height="223.387218" rx="0.163533835"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

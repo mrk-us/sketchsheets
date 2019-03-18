@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="356px" height="420px" viewBox="0 0 356 420" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>pixel2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M122.995958,141.765077 L122.995958,242.704989 C122.995958,248.208018 122.422978,250.203549 121.347043,252.215374 C120.271107,254.227199 118.692215,255.806091 116.68039,256.882027 C114.668565,257.957963 112.673034,258.530942 107.170005,258.530942 L15.8259528,258.530942 C10.3229242,258.530942 8.3273931,257.957963 6.3155681,256.882027 C4.30374311,255.806091 2.72485109,254.227199 1.64891531,252.215374 C0.572979531,250.203549 -6.85775902e-15,248.208018 -7.53168565e-15,242.704989 L4.2625829e-16,15.8259528 C-2.47668342e-16,10.3229242 0.572979531,8.3273931 1.64891531,6.3155681 C2.72485109,4.30374311 4.30374311,2.72485109 6.3155681,1.64891531 C8.3273931,0.572979531 10.3229242,7.47692987e-15 15.8259528,6.46603992e-15 L107.170005,6.39387435e-16 C112.673034,-3.71502513e-16 114.668565,0.572979531 116.68039,1.64891531 C118.692215,2.72485109 120.271107,4.30374311 121.347043,6.3155681 C122.422978,8.3273931 122.995958,10.3229242 122.995958,15.8259528 L122.995958,67.3847063 L123.610706,67.3847063 C123.951612,67.3847063 124.227971,67.6610651 124.227971,68.0019708 L124.227971,84.4623571 C124.227971,84.8032629 123.951612,85.0796216 123.610706,85.0796216 L122.995958,85.0796216 L122.995958,106.478124 L123.610706,106.478124 C123.951612,106.478124 124.227971,106.754482 124.227971,107.095388 L124.227971,141.147812 C124.227971,141.488718 123.951612,141.765077 123.610706,141.765077 L122.995958,141.765077 Z" id="path-1"></path>
+        <filter x="-26.2%" y="-6.8%" width="152.3%" height="127.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="7.5" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="20" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.153504303 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-13.7%" y="-0.8%" width="127.4%" height="115.1%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-53" transform="translate(-440.000000, -1501.000000)">
+            <g id="Group-4" transform="translate(440.000000, 1031.000000)">
+                <g id="Group-5" transform="translate(0.000000, 470.000000)">
+                    <g id="Card">
+                        <g id="Pixel-2">
+                            <rect id="bounds" x="0" y="0" width="356" height="420"></rect>
+                            <g transform="translate(117.000000, 48.000000)">
+                                <g id="Device" transform="translate(0.053355, 0.000000)">
+                                    <g id="Shape">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                        <use fill="#FAFAFA" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                                    </g>
+                                    <rect id="Shape" fill="#DFDFDF" fill-rule="nonzero" x="38.7057397" y="243.09933" width="45.5844786" height="2.1604257" rx="1.08021285"></rect>
+                                    <rect id="Shape" fill="#DFDFDF" fill-rule="nonzero" x="38.7057397" y="14.0942058" width="45.5844786" height="2.1604257" rx="1.08021285"></rect>
+                                </g>
+                                <g id="Screen" transform="translate(6.000000, 30.000000)" fill="#FFFFFF">
+                                    <rect x="0" y="0" width="110.881164" height="197.524635"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
